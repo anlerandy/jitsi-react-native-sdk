@@ -89,10 +89,7 @@
   "overrides": {
     "@xmldom/xmldom": "0.8.7"
   },
-  "scripts": {
-    "postinstall": "node sdk_instructions.js",
-    "prepare": "node prepare_sdk.js"
-  },
+  "scripts": {},
   "bugs": {
     "url": "https://github.com/jitsi/jitsi-meet/issues"
   },
