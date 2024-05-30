@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
-const Icon_1 = require("../../../icons/components/Icon");
-const Popover_web_1 = require("../../../popover/components/Popover.web");
+const react_1 = __importDefault(require("react"));
+const Icon_1 = __importDefault(require("../../../icons/components/Icon"));
+const Popover_web_1 = __importDefault(require("../../../popover/components/Popover.web"));
 /**
  * Displays the `ToolboxButtonWithIcon` component.
  *

@@ -13,6 +13,9 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hangup = exports.connect = void 0;
 // @ts-expect-error
@@ -22,7 +25,7 @@ const functions_1 = require("../../jaas/functions");
 const actions_1 = require("../../notifications/actions");
 const constants_1 = require("../../notifications/constants");
 const actions_any_2 = require("../../recording/actions.any");
-const LocalRecordingManager_web_1 = require("../../recording/components/Recording/LocalRecordingManager.web");
+const LocalRecordingManager_web_1 = __importDefault(require("../../recording/components/Recording/LocalRecordingManager.web"));
 const actions_2 = require("../jwt/actions");
 const actions_any_3 = require("./actions.any");
 __exportStar(require("./actions.any"), exports);

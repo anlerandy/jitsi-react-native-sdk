@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
@@ -8,7 +11,7 @@ const constants_1 = require("../../../base/flags/constants");
 const functions_2 = require("../../../base/flags/functions");
 const svg_1 = require("../../../base/icons/svg");
 const functions_3 = require("../../../base/participants/functions");
-const AbstractButton_1 = require("../../../base/toolbox/components/AbstractButton");
+const AbstractButton_1 = __importDefault(require("../../../base/toolbox/components/AbstractButton"));
 /**
  * Implements an {@link AbstractButton} to open the security dialog/screen.
  */

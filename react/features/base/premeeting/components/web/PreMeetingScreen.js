@@ -1,20 +1,23 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const clsx_1 = require("clsx");
-const react_1 = require("react");
+const clsx_1 = __importDefault(require("clsx"));
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
-const DeviceStatus_1 = require("../../../../prejoin/components/web/preview/DeviceStatus");
+const DeviceStatus_1 = __importDefault(require("../../../../prejoin/components/web/preview/DeviceStatus"));
 const functions_1 = require("../../../../prejoin/functions");
-const Toolbox_1 = require("../../../../toolbox/components/web/Toolbox");
+const Toolbox_1 = __importDefault(require("../../../../toolbox/components/web/Toolbox"));
 const functions_web_1 = require("../../../../toolbox/functions.web");
 const functions_2 = require("../../../conference/functions");
 const constants_1 = require("../../../config/constants");
 const functions_web_2 = require("../../../styles/functions.web");
-const ConnectionStatus_1 = require("./ConnectionStatus");
-const Preview_1 = require("./Preview");
-const RecordingWarning_1 = require("./RecordingWarning");
-const UnsafeRoomWarning_1 = require("./UnsafeRoomWarning");
+const ConnectionStatus_1 = __importDefault(require("./ConnectionStatus"));
+const Preview_1 = __importDefault(require("./Preview"));
+const RecordingWarning_1 = __importDefault(require("./RecordingWarning"));
+const UnsafeRoomWarning_1 = __importDefault(require("./UnsafeRoomWarning"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         container: {

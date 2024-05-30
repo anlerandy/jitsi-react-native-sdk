@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const events_1 = require("events");
+const events_1 = __importDefault(require("events"));
 const events_2 = require("./events");
 /**
  * The network info service implementation for web (Chrome, Firefox and Safari).

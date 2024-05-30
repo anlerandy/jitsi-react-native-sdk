@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/conference/actionTypes");
 const actionTypes_2 = require("../base/config/actionTypes");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actions_1 = require("./actions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 require("./subscriber");
 /**
  * Implements the middleware of the feature video-quality.

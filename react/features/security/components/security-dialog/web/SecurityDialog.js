@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const functions_any_1 = require("../../../../base/config/functions.any");
 const functions_1 = require("../../../../base/participants/functions");
-const Dialog_1 = require("../../../../base/ui/components/web/Dialog");
-const E2EESection_1 = require("../../../../e2ee/components/E2EESection");
-const LobbySection_1 = require("../../../../lobby/components/web/LobbySection");
+const Dialog_1 = __importDefault(require("../../../../base/ui/components/web/Dialog"));
+const E2EESection_1 = __importDefault(require("../../../../e2ee/components/E2EESection"));
+const LobbySection_1 = __importDefault(require("../../../../lobby/components/web/LobbySection"));
 const functions_2 = require("../../../../lobby/functions");
-const PasswordSection_1 = require("./PasswordSection");
+const PasswordSection_1 = __importDefault(require("./PasswordSection"));
 /**
  * Component that renders the security options dialog.
  *

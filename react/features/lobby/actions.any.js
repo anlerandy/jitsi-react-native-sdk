@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setLobbyMessageListener = exports.updateLobbyParticipantOnLeave = exports.maybeSetLobbyChatMessageListener = exports.sendLobbyChatMessage = exports.onSendMessage = exports.handleLobbyChatInitialized = exports.hideLobbyScreen = exports.openLobbyScreen = exports.toggleLobbyMode = exports.startKnocking = exports.setPasswordJoinFailed = exports.setLobbyModeEnabled = exports.setKnockingState = exports.rejectKnockingParticipant = exports.approveKnockingParticipant = exports.admitMultiple = exports.setKnockingParticipantApproval = exports.answerKnockingParticipant = exports.participantIsKnockingOrUpdated = exports.knockingParticipantLeft = exports.joinWithPassword = void 0;
 const actions_1 = require("../base/conference/actions");
@@ -13,7 +16,7 @@ const actions_3 = require("../prejoin/actions");
 const actionTypes_1 = require("./actionTypes");
 const constants_3 = require("./constants");
 const functions_3 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Tries to join with a preset password.
  *

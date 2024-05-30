@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sendLocalParticipant = exports._removeLocalTracksFromConference = exports.isRoomValid = exports._handleParticipantError = exports.getAnalyticsRoomName = exports.getOrCreateObfuscatedRoomName = exports.getRoomName = exports.isP2pActive = exports.getCurrentConference = exports.getConferenceTimestamp = exports.getVisitorOptions = exports.restoreConferenceOptions = exports.getConferenceOptions = exports.getConferenceNameForTitle = exports.getConferenceName = exports.forEachConference = exports.commonUserLeftHandling = exports.commonUserJoinedHandling = exports._addLocalTracksToConference = exports.getIsConferenceJoined = exports.getConferenceState = void 0;
 const js_sha512_1 = require("js-sha512");
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const functions_1 = require("../../app/functions");
 const functions_2 = require("../../transcribing/functions");
 const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
@@ -12,7 +15,7 @@ const functions_4 = require("../redux/functions");
 const uri_1 = require("../util/uri");
 const actions_2 = require("./actions");
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Returns root conference state.
  *

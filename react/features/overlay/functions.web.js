@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getOverlayToRender = void 0;
-const PageReloadOverlay_1 = require("./components/web/PageReloadOverlay");
-const SuspendedOverlay_1 = require("./components/web/SuspendedOverlay");
-const UserMediaPermissionsOverlay_1 = require("./components/web/UserMediaPermissionsOverlay");
+const PageReloadOverlay_1 = __importDefault(require("./components/web/PageReloadOverlay"));
+const SuspendedOverlay_1 = __importDefault(require("./components/web/SuspendedOverlay"));
+const UserMediaPermissionsOverlay_1 = __importDefault(require("./components/web/UserMediaPermissionsOverlay"));
 /**
  * Returns the overlay to be currently rendered.
  *

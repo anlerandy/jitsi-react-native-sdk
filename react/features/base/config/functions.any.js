@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getLegalUrls = exports.getSecurityUiConfig = exports.getDialOutUrl = exports.getDialOutStatusUrl = exports.setConfigFromURLParams = exports.restoreConfig = exports.isDisplayNameVisible = exports.isNameReadOnly = exports.getWhitelistedJSON = exports.overrideConfigJSON = exports.getRecordingSharingUrl = exports.getDisableRemoveRaisedHandOnFocus = exports.getFeatureFlag = exports.getSsrcRewritingFeatureFlag = exports.getMeetingRegion = exports.createFakeConfig = exports.getRoomName = void 0;
 // @ts-ignore
@@ -6,18 +9,18 @@ const js_utils_1 = require("@jitsi/js-utils");
 // eslint-disable-next-line lines-around-comment
 // @ts-ignore
 const json_1 = require("@jitsi/js-utils/json");
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const parseURLParams_1 = require("../util/parseURLParams");
-const configWhitelist_1 = require("./configWhitelist");
+const configWhitelist_1 = __importDefault(require("./configWhitelist"));
 const constants_1 = require("./constants");
-const interfaceConfigWhitelist_1 = require("./interfaceConfigWhitelist");
-const logger_1 = require("./logger");
+const interfaceConfigWhitelist_1 = __importDefault(require("./interfaceConfigWhitelist"));
+const logger_1 = __importDefault(require("./logger"));
 // XXX The function getRoomName is split out of
 // functions.any.js because it is bundled in both app.bundle and
 // do_external_connect, webpack 1 does not support tree shaking, and we don't
 // want all functions to be bundled in do_external_connect.
 var getRoomName_1 = require("./getRoomName");
-Object.defineProperty(exports, "getRoomName", { enumerable: true, get: function () { return getRoomName_1.default; } });
+Object.defineProperty(exports, "getRoomName", { enumerable: true, get: function () { return __importDefault(getRoomName_1).default; } });
 /**
  * Create a "fake" configuration object for the given base URL. This is used in case the config
  * couldn't be loaded in the welcome page, so at least we have something to try with.

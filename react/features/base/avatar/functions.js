@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isIcon = exports.isCORSAvatarURL = exports.getInitials = exports.getAvatarColor = void 0;
-const grapheme_splitter_1 = require("grapheme-splitter");
-const lodash_1 = require("lodash");
+const grapheme_splitter_1 = __importDefault(require("grapheme-splitter"));
+const lodash_1 = __importDefault(require("lodash"));
 const AVATAR_COLORS = [
     '#6A50D3',
     '#FF9B42',

@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const functions_any_1 = require("../../../base/config/functions.any");
 const functions_1 = require("../../../base/participants/functions");
-const DisplayName_1 = require("../../../display-name/components/web/DisplayName");
-const StatusIndicators_1 = require("./StatusIndicators");
+const DisplayName_1 = __importDefault(require("../../../display-name/components/web/DisplayName"));
+const StatusIndicators_1 = __importDefault(require("./StatusIndicators"));
 const useStyles = (0, mui_1.makeStyles)()(() => {
     return {
         nameContainer: {

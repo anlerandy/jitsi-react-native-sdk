@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const functions_1 = require("../redux/functions");
-const defaultScheme_1 = require("./defaultScheme");
+const defaultScheme_1 = __importDefault(require("./defaultScheme"));
 /**
  * A registry class to register styles that need to be color-schemed.
  *

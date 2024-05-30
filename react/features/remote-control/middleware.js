@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-expect-error
 const transport_1 = require("@jitsi/js-utils/transport");
 const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
 const actionTypes_3 = require("../base/participants/actionTypes");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actions_1 = require("./actions");
 const constants_1 = require("./constants");
 const functions_1 = require("./functions");

@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._updateCalendarEntries = void 0;
-const js_md5_1 = require("js-md5");
+const js_md5_1 = __importDefault(require("js-md5"));
 const uri_1 = require("../base/util/uri");
 const actions_1 = require("./actions");
 const constants_1 = require("./constants");

@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
-const AbstractVideoTrack_1 = require("../AbstractVideoTrack");
-const Video_1 = require("./Video");
+const AbstractVideoTrack_1 = __importDefault(require("../AbstractVideoTrack"));
+const Video_1 = __importDefault(require("./Video"));
 /**
  * Component that renders a video element for a passed in video track and
  * notifies the store when the video has started playing.

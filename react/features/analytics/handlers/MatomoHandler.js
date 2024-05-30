@@ -1,8 +1,11 @@
 "use strict";
 /* global _paq */
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const helpers_1 = require("../../base/util/helpers");
-const AbstractHandler_1 = require("./AbstractHandler");
+const AbstractHandler_1 = __importDefault(require("./AbstractHandler"));
 /**
  * Analytics handler for Matomo.
  */

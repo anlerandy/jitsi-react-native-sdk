@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const ColorPalette_1 = require("../../base/styles/components/styles/ColorPalette");
 const functions_any_1 = require("../../base/styles/functions.any");
-const BaseTheme_1 = require("../../base/ui/components/BaseTheme");
+const BaseTheme_1 = __importDefault(require("../../base/ui/components/BaseTheme"));
 const NOTIFICATION_SIZE = 55;
 /**
  * The styles of the React {@code Component}s of the feature meeting-list i.e.

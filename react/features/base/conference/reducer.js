@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const constants_1 = require("../../room-lock/constants");
 const actionTypes_1 = require("../connection/actionTypes");
 const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
-const ReducerRegistry_1 = require("../redux/ReducerRegistry");
+const ReducerRegistry_1 = __importDefault(require("../redux/ReducerRegistry"));
 const functions_1 = require("../redux/functions");
 const actionTypes_2 = require("./actionTypes");
 const functions_2 = require("./functions");

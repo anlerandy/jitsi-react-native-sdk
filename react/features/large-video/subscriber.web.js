@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-expect-error
-const VideoLayout_1 = require("../../../modules/UI/videolayout/VideoLayout");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const VideoLayout_1 = __importDefault(require("../../../modules/UI/videolayout/VideoLayout"));
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const functions_web_1 = require("../base/tracks/functions.web");
 const functions_1 = require("./functions");
 /**

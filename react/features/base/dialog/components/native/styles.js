@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.brandedDialog = exports.bottomSheetStyles = exports.inputDialog = exports.MD_ITEM_MARGIN_PADDING = exports.MD_ITEM_HEIGHT = exports.MD_FONT_SIZE = void 0;
 const react_native_1 = require("react-native");
-const ColorSchemeRegistry_1 = require("../../../color-scheme/ColorSchemeRegistry");
+const ColorSchemeRegistry_1 = __importDefault(require("../../../color-scheme/ColorSchemeRegistry"));
 const functions_1 = require("../../../color-scheme/functions");
 const BoxModel_1 = require("../../../styles/components/styles/BoxModel");
-const BaseTheme_native_1 = require("../../../ui/components/BaseTheme.native");
+const BaseTheme_native_1 = __importDefault(require("../../../ui/components/BaseTheme.native"));
 const constants_1 = require("../../constants");
 const BORDER_RADIUS = 5;
 /**

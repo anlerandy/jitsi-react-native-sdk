@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const utils_1 = require("../../../base/environment/utils");
 const constants_1 = require("../../../video-layout/constants");
 const functions_web_1 = require("../../../video-layout/functions.web");
 const constants_2 = require("../../constants");
 const functions_web_2 = require("../../functions.web");
-const Filmstrip_1 = require("./Filmstrip");
+const Filmstrip_1 = __importDefault(require("./Filmstrip"));
 const MainFilmstrip = (props) => (react_1.default.createElement("span", null,
     react_1.default.createElement(Filmstrip_1.default, { ...props, filmstripType: constants_2.FILMSTRIP_TYPE.MAIN })));
 /**

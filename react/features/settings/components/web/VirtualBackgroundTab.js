@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const mui_1 = require("tss-react/mui");
-const AbstractDialogTab_1 = require("../../../base/dialog/components/web/AbstractDialogTab");
+const AbstractDialogTab_1 = __importDefault(require("../../../base/dialog/components/web/AbstractDialogTab"));
 const functions_1 = require("../../../base/i18n/functions");
-const VirtualBackgrounds_1 = require("../../../virtual-background/components/VirtualBackgrounds");
+const VirtualBackgrounds_1 = __importDefault(require("../../../virtual-background/components/VirtualBackgrounds"));
 const styles = () => {
     return {
         container: {

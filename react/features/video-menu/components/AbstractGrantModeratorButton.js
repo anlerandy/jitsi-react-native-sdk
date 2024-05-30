@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
 const actions_1 = require("../../base/dialog/actions");
 const svg_1 = require("../../base/icons/svg");
 const constants_1 = require("../../base/participants/constants");
 const functions_1 = require("../../base/participants/functions");
-const AbstractButton_1 = require("../../base/toolbox/components/AbstractButton");
+const AbstractButton_1 = __importDefault(require("../../base/toolbox/components/AbstractButton"));
 const _1 = require("./");
 /**
  * An abstract remote video menu button which kicks the remote participant.

@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_redux_1 = require("react-redux");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actions_1 = require("../base/sounds/actions");
 const actions_2 = require("../notifications/actions");
 const constants_1 = require("../notifications/constants");

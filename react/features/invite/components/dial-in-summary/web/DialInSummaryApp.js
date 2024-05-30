@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
-const BaseApp_1 = require("../../../../base/app/components/BaseApp");
+const react_1 = __importDefault(require("react"));
+const BaseApp_1 = __importDefault(require("../../../../base/app/components/BaseApp"));
 const utils_1 = require("../../../../base/environment/utils");
-const GlobalStyles_web_1 = require("../../../../base/ui/components/GlobalStyles.web");
-const JitsiThemeProvider_web_1 = require("../../../../base/ui/components/JitsiThemeProvider.web");
+const GlobalStyles_web_1 = __importDefault(require("../../../../base/ui/components/GlobalStyles.web"));
+const JitsiThemeProvider_web_1 = __importDefault(require("../../../../base/ui/components/JitsiThemeProvider.web"));
 const parseURLParams_1 = require("../../../../base/util/parseURLParams");
 const constants_1 = require("../../../constants");
-const NoRoomError_web_1 = require("../../dial-in-info-page/NoRoomError.web");
-const DialInSummary_1 = require("./DialInSummary");
+const NoRoomError_web_1 = __importDefault(require("../../dial-in-info-page/NoRoomError.web"));
+const DialInSummary_1 = __importDefault(require("./DialInSummary"));
 /**
  * Wrapper application for prejoin.
  *

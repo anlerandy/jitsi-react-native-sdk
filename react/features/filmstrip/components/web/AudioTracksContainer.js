@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
-const AudioTrack_1 = require("../../../base/media/components/web/AudioTrack");
+const AudioTrack_1 = __importDefault(require("../../../base/media/components/web/AudioTrack"));
 const constants_1 = require("../../../base/media/constants");
 /**
  * A container for the remote tracks audio elements.

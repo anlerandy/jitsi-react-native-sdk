@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toggleAudioOnly = exports.setAudioOnly = void 0;
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
 const functions_1 = require("../../analytics/functions");
 const actionTypes_1 = require("./actionTypes");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Sets the audio-only flag for the current JitsiConference.
  *

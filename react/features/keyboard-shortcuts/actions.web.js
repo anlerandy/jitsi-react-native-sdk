@@ -13,6 +13,9 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initKeyboardShortcuts = void 0;
 const react_redux_1 = require("react-redux");
@@ -24,7 +27,7 @@ const constants_1 = require("../settings/constants");
 const functions_2 = require("../visitors/functions");
 const actions_any_1 = require("./actions.any");
 const functions_3 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const utils_1 = require("./utils");
 __exportStar(require("./actions.any"), exports);
 /**

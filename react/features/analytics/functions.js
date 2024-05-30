@@ -1,22 +1,48 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initAnalytics = exports.createHandlers = exports.resetAnalytics = exports.getAmplitudeIdentity = exports.sendAnalytics = void 0;
 // @ts-expect-error
 const constants_1 = require("../../../modules/API/constants");
 const functions_1 = require("../app/functions");
 const functions_2 = require("../base/conference/functions");
-const checkChromeExtensionsInstalled_1 = require("../base/environment/checkChromeExtensionsInstalled");
+const checkChromeExtensionsInstalled_1 = __importDefault(require("../base/environment/checkChromeExtensionsInstalled"));
 const utils_1 = require("../base/environment/utils");
-const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importStar(require("../base/lib-jitsi-meet"));
 const functions_any_1 = require("../base/lib-jitsi-meet/functions.any");
 const helpers_1 = require("../base/util/helpers");
 const iframeUtils_1 = require("../base/util/iframeUtils");
 const loadScript_1 = require("../base/util/loadScript");
 const uri_1 = require("../base/util/uri");
 const functions_3 = require("../prejoin/functions");
-const AmplitudeHandler_1 = require("./handlers/AmplitudeHandler");
-const MatomoHandler_1 = require("./handlers/MatomoHandler");
-const logger_1 = require("./logger");
+const AmplitudeHandler_1 = __importDefault(require("./handlers/AmplitudeHandler"));
+const MatomoHandler_1 = __importDefault(require("./handlers/MatomoHandler"));
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Sends an event through the lib-jitsi-meet AnalyticsAdapter interface.
  *

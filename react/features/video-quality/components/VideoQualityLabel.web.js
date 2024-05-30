@@ -1,15 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_i18next_1 = require("react-i18next");
 const react_redux_1 = require("react-redux");
 const actions_1 = require("../../base/dialog/actions");
 const svg_1 = require("../../base/icons/svg");
-const Label_1 = require("../../base/label/components/web/Label");
+const Label_1 = __importDefault(require("../../base/label/components/web/Label"));
 const constants_1 = require("../../base/label/constants");
-const Tooltip_1 = require("../../base/tooltip/components/Tooltip");
+const Tooltip_1 = __importDefault(require("../../base/tooltip/components/Tooltip"));
 const functions_web_1 = require("../../video-layout/functions.web");
-const VideoQualityDialog_web_1 = require("./VideoQualityDialog.web");
+const VideoQualityDialog_web_1 = __importDefault(require("./VideoQualityDialog.web"));
 /**
  * React {@code Component} responsible for displaying a label that indicates
  * the displayed video state of the current conference. {@code AudioOnlyLabel}

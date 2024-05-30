@@ -1,20 +1,46 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const js_fetch_api_1 = require("@giphy/js-fetch-api");
 const react_components_1 = require("@giphy/react-components");
-const react_1 = require("react");
+const react_1 = __importStar(require("react"));
 const react_i18next_1 = require("react-i18next");
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");
-const Input_1 = require("../../../base/ui/components/web/Input");
+const Input_1 = __importDefault(require("../../../base/ui/components/web/Input"));
 const actions_any_1 = require("../../../chat/actions.any");
 const constants_1 = require("../../../filmstrip/constants");
 const actions_web_1 = require("../../../reactions/actions.web");
 const types_1 = require("../../../reactions/types");
-const Drawer_1 = require("../../../toolbox/components/web/Drawer");
-const JitsiPortal_1 = require("../../../toolbox/components/web/JitsiPortal");
+const Drawer_1 = __importDefault(require("../../../toolbox/components/web/Drawer"));
+const JitsiPortal_1 = __importDefault(require("../../../toolbox/components/web/JitsiPortal"));
 const actions_1 = require("../../actions");
 const function_any_1 = require("../../function.any");
 const OVERFLOW_DRAWER_PADDING = 16;

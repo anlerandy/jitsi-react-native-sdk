@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../../prejoin/actionTypes");
 const actions_1 = require("../../prejoin/actions");
 const actionTypes_2 = require("../app/actionTypes");
 const functions_1 = require("../jwt/functions");
 const constants_1 = require("../media/constants");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const actionTypes_3 = require("../tracks/actionTypes");
 const actions_2 = require("./actions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 require("./middleware.any");
 /**
  * The middleware of the feature base/settings. Distributes changes to the state

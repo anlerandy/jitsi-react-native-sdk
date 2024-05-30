@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mapStateToProps = exports.INDICATOR_DISPLAY_THRESHOLD = void 0;
 const react_1 = require("react");
 const functions_1 = require("../../base/participants/functions");
-const statsEmitter_1 = require("../statsEmitter");
+const statsEmitter_1 = __importDefault(require("../statsEmitter"));
 const defaultAutoHideTimeout = 5000;
 /**
  * The connection quality percentage that must be reached to be considered of

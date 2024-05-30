@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
-const AbstractAudio_1 = require("../AbstractAudio");
+const react_1 = __importDefault(require("react"));
+const AbstractAudio_1 = __importDefault(require("../AbstractAudio"));
 /**
  * The React/Web {@link Component} which is similar to and wraps around
  * {@code HTMLAudioElement} in order to facilitate cross-platform source code.

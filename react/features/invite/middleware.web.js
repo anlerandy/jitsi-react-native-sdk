@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actions_1 = require("../base/dialog/actions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actionTypes_1 = require("./actionTypes");
-const AddPeopleDialog_1 = require("./components/add-people-dialog/web/AddPeopleDialog");
+const AddPeopleDialog_1 = __importDefault(require("./components/add-people-dialog/web/AddPeopleDialog"));
 require("./middleware.any");
 /**
  * The middleware of the feature invite specific to Web/React.

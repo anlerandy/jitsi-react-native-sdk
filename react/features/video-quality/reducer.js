@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/config/actionTypes");
-const PersistenceRegistry_1 = require("../base/redux/PersistenceRegistry");
-const ReducerRegistry_1 = require("../base/redux/ReducerRegistry");
+const PersistenceRegistry_1 = __importDefault(require("../base/redux/PersistenceRegistry"));
+const ReducerRegistry_1 = __importDefault(require("../base/redux/ReducerRegistry"));
 const functions_1 = require("../base/redux/functions");
 const actionTypes_2 = require("./actionTypes");
 const constants_1 = require("./constants");
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const DEFAULT_STATE = {
     maxReceiverVideoQualityForLargeVideo: constants_1.VIDEO_QUALITY_LEVELS.ULTRA,
     maxReceiverVideoQualityForScreenSharingFilmstrip: constants_1.VIDEO_QUALITY_LEVELS.HIGH,

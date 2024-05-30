@@ -1,19 +1,45 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.HighlightButton = void 0;
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const actions_1 = require("../../../../base/dialog/actions");
 const functions_1 = require("../../../../base/i18n/functions");
 const svg_1 = require("../../../../base/icons/svg");
 const constants_1 = require("../../../../base/jwt/constants");
-const Label_1 = require("../../../../base/label/components/web/Label");
-const Tooltip_1 = require("../../../../base/tooltip/components/Tooltip");
-const BaseTheme_web_1 = require("../../../../base/ui/components/BaseTheme.web");
+const Label_1 = __importDefault(require("../../../../base/label/components/web/Label"));
+const Tooltip_1 = __importDefault(require("../../../../base/tooltip/components/Tooltip"));
+const BaseTheme_web_1 = __importDefault(require("../../../../base/ui/components/BaseTheme.web"));
 const actions_2 = require("../../../../jaas/actions");
-const StartRecordingDialog_1 = require("../../Recording/web/StartRecordingDialog");
-const AbstractHighlightButton_1 = require("../AbstractHighlightButton");
+const StartRecordingDialog_1 = __importDefault(require("../../Recording/web/StartRecordingDialog"));
+const AbstractHighlightButton_1 = __importStar(require("../AbstractHighlightButton"));
 /**
  * Creates the styles for the component.
  *

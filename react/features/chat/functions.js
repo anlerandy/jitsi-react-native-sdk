@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getPrivateNoticeMessage = exports.getCanReplyToMessage = exports.getMessageText = exports.getFormattedTimestamp = exports.areSmileysDisabled = exports.getUnreadCount = exports.replaceNonUnicodeEmojis = void 0;
 // @ts-expect-error
-const aliases_1 = require("react-emoji-render/data/aliases");
+const aliases_1 = __importDefault(require("react-emoji-render/data/aliases"));
 // eslint-disable-next-line lines-around-comment
 // @ts-expect-error
-const asciiAliases_1 = require("react-emoji-render/data/asciiAliases");
+const asciiAliases_1 = __importDefault(require("react-emoji-render/data/asciiAliases"));
 const dateUtil_1 = require("../base/i18n/dateUtil");
-const i18next_1 = require("../base/i18n/i18next");
+const i18next_1 = __importDefault(require("../base/i18n/i18next"));
 const functions_1 = require("../base/participants/functions");
 const helpers_1 = require("../base/util/helpers");
 const constants_1 = require("./constants");

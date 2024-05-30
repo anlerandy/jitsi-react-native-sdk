@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const excalidraw_1 = require("@jitsi/excalidraw");
 const functions_1 = require("../base/conference/functions");
@@ -6,13 +9,13 @@ const actions_1 = require("../base/dialog/actions");
 const functions_2 = require("../base/dialog/functions");
 const actions_2 = require("../base/participants/actions");
 const types_1 = require("../base/participants/types");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const functions_3 = require("../breakout-rooms/functions");
 const actions_web_1 = require("../filmstrip/actions.web");
 const functions_web_1 = require("../filmstrip/functions.web");
 const actionTypes_1 = require("./actionTypes");
 const actions_3 = require("./actions");
-const WhiteboardLimitDialog_1 = require("./components/web/WhiteboardLimitDialog");
+const WhiteboardLimitDialog_1 = __importDefault(require("./components/web/WhiteboardLimitDialog"));
 const constants_1 = require("./constants");
 const functions_4 = require("./functions");
 const types_2 = require("./types");

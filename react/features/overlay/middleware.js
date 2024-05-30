@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_any_1 = require("../base/lib-jitsi-meet/functions.any");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actions_1 = require("./actions");
 /**
  * List of errors that are not fatal (or handled differently) so then the page reload dialog won't kick in.

@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.submitVideoDeviceSelectionTab = exports.submitAudioDeviceSelectionTab = void 0;
 const AnalyticsEvents_1 = require("../analytics/AnalyticsEvents");
@@ -9,7 +12,7 @@ const actions_2 = require("../base/settings/actions");
 const actions_3 = require("../noise-suppression/actions");
 const actions_4 = require("../screen-share/actions");
 const functions_3 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Submits the settings related to audio device selection.
  *

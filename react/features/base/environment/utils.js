@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isIosMobileBrowser = exports.isMobileBrowser = void 0;
-const Platform_1 = require("../react/Platform");
+const Platform_1 = __importDefault(require("../react/Platform"));
 /**
  * Returns whether or not the current environment is a mobile device.
  *

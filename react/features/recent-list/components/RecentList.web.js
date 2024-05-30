@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const functions_1 = require("../../base/i18n/functions");
-const MeetingsList_1 = require("../../base/react/components/web/MeetingsList");
+const MeetingsList_1 = __importDefault(require("../../base/react/components/web/MeetingsList"));
 const actions_1 = require("../actions");
 const functions_web_1 = require("../functions.web");
-const AbstractRecentList_1 = require("./AbstractRecentList");
+const AbstractRecentList_1 = __importDefault(require("./AbstractRecentList"));
 /**
  * The cross platform container rendering the list of the recently joined rooms.
  *

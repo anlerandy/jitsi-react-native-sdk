@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.redirect = exports.setAssumedBandwidthBps = exports.setLocalSubject = exports.setSubject = exports.setStartMutedPolicy = exports.setRoom = exports.setObfuscatedRoom = exports.setPassword = exports.setStartReactionsMuted = exports.setFollowMe = exports.sendTones = exports.p2pStatusChanged = exports.onStartMutedPolicyChanged = exports.nonParticipantMessageReceived = exports.lockStateChanged = exports.leaveConference = exports.kickedOut = exports.endConference = exports.endpointMessageReceived = exports.dataChannelClosed = exports.dataChannelOpened = exports.checkIfCanJoin = exports.createConference = exports.conferenceWillLeave = exports.conferenceWillJoin = exports.conferenceWillInit = exports._conferenceWillJoin = exports.conferenceUniqueIdSet = exports.conferenceTimestampChanged = exports.conferenceSubjectChanged = exports.conferenceLeft = exports.conferenceJoinInProgress = exports.conferenceJoined = exports.conferenceFailed = exports.authStatusChanged = exports.e2eRttChanged = exports.updateConferenceMetadata = void 0;
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
@@ -23,7 +26,7 @@ const actionTypes_1 = require("./actionTypes");
 const actions_6 = require("./actions");
 const constants_3 = require("./constants");
 const functions_7 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Adds conference (event) listeners.
  *

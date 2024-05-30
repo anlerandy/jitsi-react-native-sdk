@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const throttle_1 = require("lodash/throttle");
-const react_1 = require("react");
+const throttle_1 = __importDefault(require("lodash/throttle"));
+const react_1 = __importDefault(require("react"));
 const seamless_scroll_polyfill_1 = require("seamless-scroll-polyfill");
 const constants_1 = require("../../constants");
-const AbstractMessageContainer_1 = require("../AbstractMessageContainer");
-const ChatMessageGroup_1 = require("./ChatMessageGroup");
-const NewMessagesButton_1 = require("./NewMessagesButton");
+const AbstractMessageContainer_1 = __importDefault(require("../AbstractMessageContainer"));
+const ChatMessageGroup_1 = __importDefault(require("./ChatMessageGroup"));
+const NewMessagesButton_1 = __importDefault(require("./NewMessagesButton"));
 /**
  * Displays all received chat messages, grouped by sender.
  *

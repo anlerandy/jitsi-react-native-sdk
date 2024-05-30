@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._abstractMapStateToProps = exports.isDialogOpen = exports.isAnyDialogOpen = void 0;
-const ColorSchemeRegistry_1 = require("../color-scheme/ColorSchemeRegistry");
+const ColorSchemeRegistry_1 = __importDefault(require("../color-scheme/ColorSchemeRegistry"));
 const functions_1 = require("../redux/functions");
 /**
  * Checks if any {@code Dialog} is currently open.

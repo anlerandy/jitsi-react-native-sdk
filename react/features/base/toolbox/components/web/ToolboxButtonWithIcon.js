@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const types_1 = require("../../../../toolbox/types");
-const Icon_1 = require("../../../icons/components/Icon");
-const Tooltip_1 = require("../../../tooltip/components/Tooltip");
+const Icon_1 = __importDefault(require("../../../icons/components/Icon"));
+const Tooltip_1 = __importDefault(require("../../../tooltip/components/Tooltip"));
 /**
  * Displays the `ToolboxButtonWithIcon` component.
  *

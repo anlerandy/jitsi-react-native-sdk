@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.removePendingInviteRequests = exports.addPendingInviteRequest = exports.setCalleeInfoVisible = exports.updateDialInNumbers = exports.invite = exports.hideAddPeopleDialog = exports.beginAddPeople = void 0;
 const functions_1 = require("../base/connection/functions");
@@ -8,7 +11,7 @@ const _utils_1 = require("./_utils");
 const actionTypes_1 = require("./actionTypes");
 const constants_1 = require("./constants");
 const functions_3 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Creates a (redux) action to signal that a click/tap has been performed on
  * {@link InviteButton} and that the execution flow for adding/inviting people

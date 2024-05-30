@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateDropboxToken = exports.authorizeDropbox = void 0;
 const actionTypes_1 = require("./actionTypes");
 const functions_1 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Action to authorize the Jitsi Recording app in dropbox.
  *

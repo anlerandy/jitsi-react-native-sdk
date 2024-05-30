@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/conference/actionTypes");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
-const ReducerRegistry_1 = require("../base/redux/ReducerRegistry");
+const ReducerRegistry_1 = __importDefault(require("../base/redux/ReducerRegistry"));
 const actionTypes_2 = require("./actionTypes");
 const DEFAULT_STATE = {
     isDisplayNameRequiredError: false,

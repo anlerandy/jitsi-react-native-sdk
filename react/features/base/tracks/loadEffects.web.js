@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const NoiseSuppressionEffect_1 = require("../../stream-effects/noise-suppression/NoiseSuppressionEffect");
 const virtual_background_1 = require("../../stream-effects/virtual-background");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Loads the enabled stream effects.
  *

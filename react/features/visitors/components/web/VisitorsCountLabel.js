@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_i18next_1 = require("react-i18next");
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const svg_1 = require("../../../base/icons/svg");
-const Label_1 = require("../../../base/label/components/web/Label");
-const Tooltip_1 = require("../../../base/tooltip/components/Tooltip");
+const Label_1 = __importDefault(require("../../../base/label/components/web/Label"));
+const Tooltip_1 = __importDefault(require("../../../base/tooltip/components/Tooltip"));
 const functions_1 = require("../../functions");
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {

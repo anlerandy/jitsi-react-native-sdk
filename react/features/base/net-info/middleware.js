@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../app/actionTypes");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
-const NetworkInfoService_1 = require("./NetworkInfoService");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
+const NetworkInfoService_1 = __importDefault(require("./NetworkInfoService"));
 const actions_1 = require("./actions");
 const constants_1 = require("./constants");
 const events_1 = require("./events");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Middleware for 'base/net-info' feature.
  *

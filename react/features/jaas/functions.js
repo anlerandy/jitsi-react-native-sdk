@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getJaasJWT = exports.sendGetJWTRequest = exports.isFeatureDisabled = exports.sendGetDetailsRequest = exports.sendGetCustomerIdRequest = exports.isVpaasMeeting = exports.getVpaasTenant = void 0;
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Returns the full vpaas tenant if available, given a path.
  *

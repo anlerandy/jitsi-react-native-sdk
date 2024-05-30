@@ -1,24 +1,50 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable react/no-multi-comp */
-const react_1 = require("react");
+const react_1 = __importStar(require("react"));
 const react_redux_1 = require("react-redux");
 const lib_jitsi_meet_1 = require("../../../base/lib-jitsi-meet");
-const E2EELabel_1 = require("../../../e2ee/components/E2EELabel");
-const HighlightButton_1 = require("../../../recording/components/Recording/web/HighlightButton");
-const RecordingLabel_1 = require("../../../recording/components/web/RecordingLabel");
+const E2EELabel_1 = __importDefault(require("../../../e2ee/components/E2EELabel"));
+const HighlightButton_1 = __importDefault(require("../../../recording/components/Recording/web/HighlightButton"));
+const RecordingLabel_1 = __importDefault(require("../../../recording/components/web/RecordingLabel"));
 const actions_web_1 = require("../../../toolbox/actions.web");
 const functions_web_1 = require("../../../toolbox/functions.web");
-const VideoQualityLabel_web_1 = require("../../../video-quality/components/VideoQualityLabel.web");
-const VisitorsCountLabel_1 = require("../../../visitors/components/web/VisitorsCountLabel");
-const ConferenceTimer_1 = require("../ConferenceTimer");
+const VideoQualityLabel_web_1 = __importDefault(require("../../../video-quality/components/VideoQualityLabel.web"));
+const VisitorsCountLabel_1 = __importDefault(require("../../../visitors/components/web/VisitorsCountLabel"));
+const ConferenceTimer_1 = __importDefault(require("../ConferenceTimer"));
 const functions_web_2 = require("../functions.web");
-const ConferenceInfoContainer_1 = require("./ConferenceInfoContainer");
-const InsecureRoomNameLabel_1 = require("./InsecureRoomNameLabel");
-const RaisedHandsCountLabel_1 = require("./RaisedHandsCountLabel");
-const SpeakerStatsLabel_1 = require("./SpeakerStatsLabel");
-const SubjectText_1 = require("./SubjectText");
-const ToggleTopPanelLabel_1 = require("./ToggleTopPanelLabel");
+const ConferenceInfoContainer_1 = __importDefault(require("./ConferenceInfoContainer"));
+const InsecureRoomNameLabel_1 = __importDefault(require("./InsecureRoomNameLabel"));
+const RaisedHandsCountLabel_1 = __importDefault(require("./RaisedHandsCountLabel"));
+const SpeakerStatsLabel_1 = __importDefault(require("./SpeakerStatsLabel"));
+const SubjectText_1 = __importDefault(require("./SubjectText"));
+const ToggleTopPanelLabel_1 = __importDefault(require("./ToggleTopPanelLabel"));
 const COMPONENTS = [
     {
         Component: HighlightButton_1.default,

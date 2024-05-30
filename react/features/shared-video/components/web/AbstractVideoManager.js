@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapDispatchToProps = exports._mapStateToProps = void 0;
 // @ts-expect-error
-const logger_1 = require("@jitsi/logger");
-const throttle_1 = require("lodash/throttle");
+const logger_1 = __importDefault(require("@jitsi/logger"));
+const throttle_1 = __importDefault(require("lodash/throttle"));
 const react_1 = require("react");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");

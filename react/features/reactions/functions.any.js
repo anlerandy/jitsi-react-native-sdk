@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.shouldDisplayReactionsButtons = exports.isReactionsEnabled = exports.getReactionsSoundsThresholds = exports.sendReactionsWebhook = exports.getReactionsWithId = exports.getReactionMessageFromBuffer = exports.getReactionsQueue = void 0;
 const uuid_1 = require("uuid");
@@ -8,7 +11,7 @@ const functions_2 = require("../base/participants/functions");
 const functions_any_1 = require("../dynamic-branding/functions.any");
 const functions_3 = require("../visitors/functions");
 const constants_2 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Returns the queue of reactions.
  *

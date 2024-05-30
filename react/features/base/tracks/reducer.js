@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../participants/actionTypes");
-const ReducerRegistry_1 = require("../redux/ReducerRegistry");
+const ReducerRegistry_1 = __importDefault(require("../redux/ReducerRegistry"));
 const functions_1 = require("../redux/functions");
 const actionTypes_2 = require("./actionTypes");
 /**

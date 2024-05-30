@@ -1,8 +1,34 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const clsx_1 = require("clsx");
-const lodash_1 = require("lodash");
-const react_1 = require("react");
+const clsx_1 = __importDefault(require("clsx"));
+const lodash_1 = __importDefault(require("lodash"));
+const react_1 = __importStar(require("react"));
 const react_redux_1 = require("react-redux");
 const react_window_1 = require("react-window");
 const mui_1 = require("tss-react/mui");
@@ -10,7 +36,7 @@ const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");
 const utils_1 = require("../../../base/environment/utils");
 const functions_2 = require("../../../base/i18n/functions");
-const Icon_1 = require("../../../base/icons/components/Icon");
+const Icon_1 = __importDefault(require("../../../base/icons/components/Icon"));
 const svg_1 = require("../../../base/icons/svg");
 const functions_any_1 = require("../../../base/settings/functions.any");
 const actions_1 = require("../../../keyboard-shortcuts/actions");
@@ -22,9 +48,9 @@ const actions_2 = require("../../actions");
 const constants_2 = require("../../constants");
 const functions_3 = require("../../functions");
 const functions_web_3 = require("../../functions.web");
-const AudioTracksContainer_1 = require("./AudioTracksContainer");
-const Thumbnail_1 = require("./Thumbnail");
-const ThumbnailWrapper_1 = require("./ThumbnailWrapper");
+const AudioTracksContainer_1 = __importDefault(require("./AudioTracksContainer"));
+const Thumbnail_1 = __importDefault(require("./Thumbnail"));
+const ThumbnailWrapper_1 = __importDefault(require("./ThumbnailWrapper"));
 const styles_1 = require("./styles");
 /**
  * Implements a React {@link Component} which represents the filmstrip on

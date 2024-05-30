@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toggleCamera = exports.setNoSrcDataNotificationUid = exports.destroyLocalDesktopTrackIfExists = exports._disposeAndRemoveTracks = exports.trackStreamingStatusChanged = exports.trackVideoTypeChanged = exports.trackVideoStarted = exports.trackRemoved = exports.trackNoDataFromSourceNotificationInfoChanged = exports.trackMuteUnmuteFailed = exports.trackMutedChanged = exports.trackAdded = exports.replaceLocalTrack = exports.showNoDataFromSourceVideoError = exports.noDataFromSource = exports.destroyLocalTracks = exports.createLocalTracksA = exports.createDesiredLocalTracks = exports.addLocalTrack = void 0;
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
@@ -14,7 +17,7 @@ const functions_3 = require("../participants/functions");
 const actions_3 = require("../settings/actions");
 const actionTypes_1 = require("./actionTypes");
 const functions_4 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Add a given local track to the conference.
  *

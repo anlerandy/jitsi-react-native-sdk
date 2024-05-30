@@ -1,15 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TRANSLATION_LANGUAGES_HEAD = exports.DEFAULT_LANGUAGE = exports.TRANSLATION_LANGUAGES = exports.LANGUAGES = void 0;
-const en_json_1 = require("i18n-iso-countries/langs/en.json");
-const i18next_1 = require("i18next");
-const i18next_http_backend_1 = require("i18next-http-backend");
-const lodash_1 = require("lodash");
-const languages_json_1 = require("../../../../lang/languages.json");
-const main_json_1 = require("../../../../lang/main.json");
-const translation_languages_json_1 = require("../../../../lang/translation-languages.json");
+const en_json_1 = __importDefault(require("i18n-iso-countries/langs/en.json"));
+const i18next_1 = __importDefault(require("i18next"));
+const i18next_http_backend_1 = __importDefault(require("i18next-http-backend"));
+const lodash_1 = __importDefault(require("lodash"));
+const languages_json_1 = __importDefault(require("../../../../lang/languages.json"));
+const main_json_1 = __importDefault(require("../../../../lang/main.json"));
+const translation_languages_json_1 = __importDefault(require("../../../../lang/translation-languages.json"));
 const actionTypes_1 = require("./actionTypes");
-const languageDetector_1 = require("./languageDetector");
+const languageDetector_1 = __importDefault(require("./languageDetector"));
 /**
  * Override certain country names.
  */

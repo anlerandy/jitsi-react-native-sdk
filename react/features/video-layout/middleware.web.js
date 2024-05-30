@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-expect-error
-const VideoLayout_js_1 = require("../../../modules/UI/videolayout/VideoLayout.js");
+const VideoLayout_js_1 = __importDefault(require("../../../modules/UI/videolayout/VideoLayout.js"));
 const actionTypes_1 = require("../base/conference/actionTypes");
 const constants_1 = require("../base/media/constants");
 const actionTypes_2 = require("../base/participants/actionTypes");
 const functions_1 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actionTypes_3 = require("../base/tracks/actionTypes");
 const actionTypes_4 = require("../participants-pane/actionTypes");
 require("./middleware.any");

@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.registerE2eeAudioFiles = exports.unregisterE2eeAudioFiles = exports.displayVerification = exports.isMaxModeThresholdReached = exports.isMaxModeReached = exports.doesEveryoneSupportE2EE = void 0;
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const functions_1 = require("../base/media/functions");
 const functions_2 = require("../base/participants/functions");
 const functions_3 = require("../base/redux/functions");

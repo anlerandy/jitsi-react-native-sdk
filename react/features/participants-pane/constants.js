@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AVATAR_SIZE = exports.VideoStateIcons = exports.AudioStateIcons = exports.QUICK_ACTION_BUTTON = exports.MEDIA_STATE = exports.ACTION_TRIGGER = exports.REDUCER_KEY = void 0;
-const react_1 = require("react");
-const Icon_1 = require("../base/icons/components/Icon");
+const react_1 = __importDefault(require("react"));
+const Icon_1 = __importDefault(require("../base/icons/components/Icon"));
 const svg_1 = require("../base/icons/svg");
 /**
  * Reducer key for the feature.

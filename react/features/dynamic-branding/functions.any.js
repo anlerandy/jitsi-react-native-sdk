@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fetchCustomIcons = exports.isDynamicBrandingDataLoaded = exports.getDynamicBrandingUrl = exports.extractFqnFromPath = void 0;
 const functions_1 = require("../base/redux/functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Extracts the fqn part from a path, where fqn represents
  * tenant/roomName.

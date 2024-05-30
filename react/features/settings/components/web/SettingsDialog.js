@@ -1,27 +1,30 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const svg_1 = require("../../../base/icons/svg");
-const DialogWithTabs_1 = require("../../../base/ui/components/web/DialogWithTabs");
+const DialogWithTabs_1 = __importDefault(require("../../../base/ui/components/web/DialogWithTabs"));
 const functions_web_1 = require("../../../calendar-sync/functions.web");
 const actions_web_1 = require("../../../device-selection/actions.web");
-const AudioDevicesSelection_1 = require("../../../device-selection/components/AudioDevicesSelection");
-const VideoDeviceSelection_1 = require("../../../device-selection/components/VideoDeviceSelection");
+const AudioDevicesSelection_1 = __importDefault(require("../../../device-selection/components/AudioDevicesSelection"));
+const VideoDeviceSelection_1 = __importDefault(require("../../../device-selection/components/VideoDeviceSelection"));
 const functions_web_2 = require("../../../device-selection/functions.web");
 const functions_1 = require("../../../virtual-background/functions");
 const functions_2 = require("../../../visitors/functions");
 const actions_1 = require("../../actions");
 const constants_1 = require("../../constants");
 const functions_3 = require("../../functions");
-const CalendarTab_1 = require("./CalendarTab");
-const ModeratorTab_1 = require("./ModeratorTab");
-const MoreTab_1 = require("./MoreTab");
-const NotificationsTab_1 = require("./NotificationsTab");
-const ProfileTab_1 = require("./ProfileTab");
-const ShortcutsTab_1 = require("./ShortcutsTab");
-const VirtualBackgroundTab_1 = require("./VirtualBackgroundTab");
+const CalendarTab_1 = __importDefault(require("./CalendarTab"));
+const ModeratorTab_1 = __importDefault(require("./ModeratorTab"));
+const MoreTab_1 = __importDefault(require("./MoreTab"));
+const NotificationsTab_1 = __importDefault(require("./NotificationsTab"));
+const ProfileTab_1 = __importDefault(require("./ProfileTab"));
+const ShortcutsTab_1 = __importDefault(require("./ShortcutsTab"));
+const VirtualBackgroundTab_1 = __importDefault(require("./VirtualBackgroundTab"));
 const useStyles = (0, mui_1.makeStyles)()(() => {
     return {
         settingsDialog: {

@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
@@ -8,7 +11,7 @@ const actions_1 = require("../base/dialog/actions");
 const functions_2 = require("../base/dialog/functions");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const constants_1 = require("../base/media/constants");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const functions_any_1 = require("../base/tracks/functions.any");
 const uri_1 = require("../base/util/uri");
 const actions_2 = require("../settings/actions");
@@ -16,7 +19,7 @@ const actionTypes_4 = require("./actionTypes");
 const actions_3 = require("./actions");
 const components_1 = require("./components");
 const functions_3 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Middleware that captures connection or conference failed errors and controls
  * {@link WaitForOwnerDialog} and {@link LoginDialog}.

@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.muteAllParticipants = exports.muteRemote = exports.muteLocal = void 0;
 const AnalyticsEvents_1 = require("../analytics/AnalyticsEvents");
@@ -11,7 +14,7 @@ const actions_3 = require("../base/participants/actions");
 const functions_3 = require("../base/participants/functions");
 const actions_4 = require("../base/tracks/actions");
 const functions_4 = require("../notifications/functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Mutes the local participant.
  *

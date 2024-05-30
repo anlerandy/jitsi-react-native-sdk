@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_i18next_1 = require("react-i18next");
 const mui_1 = require("tss-react/mui");
-const CopyButton_web_1 = require("../../../../base/buttons/CopyButton.web");
+const CopyButton_web_1 = __importDefault(require("../../../../base/buttons/CopyButton.web"));
 const uri_1 = require("../../../../base/util/uri");
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {

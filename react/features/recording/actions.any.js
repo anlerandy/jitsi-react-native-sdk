@@ -1,9 +1,35 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.showStartRecordingNotificationWithCallback = exports.stopLocalVideoRecording = exports.startLocalVideoRecording = exports.setSelectedRecordingService = exports.updateRecordingSessionData = exports.showStartedRecordingNotification = exports.showStoppedRecordingNotification = exports.showRecordingWarning = exports.showRecordingError = exports.highlightMeetingMoment = exports.showPendingRecordingNotification = exports.setLiveStreamKey = exports.hidePendingRecordingNotification = exports.setHighlightMomentButtonState = exports.setStartRecordingNotificationShown = exports.clearRecordingSessions = void 0;
 const functions_1 = require("../base/config/functions");
 const functions_2 = require("../base/jwt/functions");
-const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importStar(require("../base/lib-jitsi-meet"));
 const functions_3 = require("../base/participants/functions");
 const constants_any_1 = require("../base/ui/constants.any");
 const copyText_1 = require("../base/util/copyText");
@@ -15,7 +41,7 @@ const functions_5 = require("../transcribing/functions");
 const actionTypes_1 = require("./actionTypes");
 const constants_2 = require("./constants");
 const functions_6 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Clears the data of every recording sessions.
  *

@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getCameraFacingMode = exports.logTracksForParticipant = exports.setTrackMuted = exports._setGUMPendingState = exports.isUserInteractionRequiredForUnmute = exports.isRemoteTrackMuted = exports.isLocalVideoTrackDesktop = exports.isLocalTrackMuted = exports.getTracksByMediaType = exports.getTrackByJitsiTrack = exports.getTrackSourceNameByMediaTypeAndParticipant = exports.getScreenShareTrack = exports.getVirtualScreenshareParticipantTrack = exports.getTrackByParticipantId = exports.getTrackByMediaTypeAndParticipant = exports.getVideoTrackByParticipant = exports.getLocalJitsiAudioTrack = exports.getLocalJitsiVideoTrack = exports.getLocalVideoTrack = exports.getLocalTracks = exports.getLocalTrack = exports.getLocalJitsiDesktopTrack = exports.getLocalDesktopTrack = exports.getLocalAudioTrack = exports.isParticipantVideoMuted = exports.isParticipantAudioMuted = exports.isParticipantMediaMuted = exports.getTrackState = void 0;
 const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
@@ -6,7 +9,7 @@ const actions_1 = require("../media/actions");
 const constants_1 = require("../media/constants");
 const types_1 = require("../media/types");
 const functions_1 = require("../participants/functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Returns root tracks state.
  *

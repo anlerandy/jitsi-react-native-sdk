@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const functions_1 = require("../conference/functions");
 const functions_any_1 = require("../config/functions.any");
 const constants_1 = require("../media/constants");
-const StateListenerRegistry_1 = require("../redux/StateListenerRegistry");
+const StateListenerRegistry_1 = __importDefault(require("../redux/StateListenerRegistry"));
 const actions_1 = require("./actions");
 const functions_2 = require("./functions");
 const types_1 = require("./types");

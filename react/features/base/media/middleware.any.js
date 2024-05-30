@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
 const functions_1 = require("../../analytics/functions");
@@ -12,7 +15,7 @@ const actions_2 = require("../audio-only/actions");
 const actionTypes_3 = require("../conference/actionTypes");
 const functions_4 = require("../conference/functions");
 const functions_5 = require("../participants/functions");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const functions_any_1 = require("../settings/functions.any");
 const actionTypes_4 = require("../tracks/actionTypes");
 const actions_any_1 = require("../tracks/actions.any");
@@ -21,7 +24,7 @@ const actionTypes_5 = require("./actionTypes");
 const actions_3 = require("./actions");
 const constants_2 = require("./constants");
 const functions_6 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const reducer_1 = require("./reducer");
 /**
  * Implements the entry point of the middleware of the feature base/media.

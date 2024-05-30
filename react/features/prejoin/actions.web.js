@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setPrejoinPageVisibility = exports.setPrejoinDeviceErrors = exports.setJoinByPhoneDialogVisiblity = exports.setSkipPrejoinOnReload = exports.setDialOutNumber = exports.setDialOutCountry = exports.setDeviceStatusWarning = exports.setDeviceStatusOk = exports.replaceVideoTrackById = exports.replaceAudioTrackById = exports.openDialInPage = exports.joinConferenceWithoutAudio = exports.setJoiningInProgress = exports.joinConference = exports.initPrejoin = exports.dialOut = void 0;
 const uuid_1 = require("uuid");
@@ -18,7 +21,7 @@ const actions_5 = require("../notifications/actions");
 const constants_2 = require("../notifications/constants");
 const actionTypes_1 = require("./actionTypes");
 const functions_6 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const dialOutStatusToKeyMap = {
     INITIATED: 'presenceStatus.calling',
     RINGING: 'presenceStatus.ringing'

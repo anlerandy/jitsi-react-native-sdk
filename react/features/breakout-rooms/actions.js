@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.moveToRoom = exports.sendParticipantToRoom = exports.autoAssignToBreakoutRooms = exports.removeBreakoutRoom = exports.renameBreakoutRoom = exports.closeBreakoutRoom = exports.createBreakoutRoom = void 0;
-const i18next_1 = require("i18next");
-const lodash_1 = require("lodash");
+const i18next_1 = __importDefault(require("i18next"));
+const lodash_1 = __importDefault(require("lodash"));
 const AnalyticsEvents_1 = require("../analytics/AnalyticsEvents");
 const functions_1 = require("../analytics/functions");
 const actions_1 = require("../base/conference/actions");
@@ -18,7 +21,7 @@ const constants_3 = require("../notifications/constants");
 const actionTypes_1 = require("./actionTypes");
 const constants_4 = require("./constants");
 const functions_5 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Action to create a breakout room.
  *

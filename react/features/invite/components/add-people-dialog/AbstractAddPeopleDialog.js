@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
 const react_1 = require("react");
@@ -10,7 +13,7 @@ const constants_1 = require("../../../notifications/constants");
 const actions_any_1 = require("../../actions.any");
 const constants_2 = require("../../constants");
 const functions_2 = require("../../functions");
-const logger_1 = require("../../logger");
+const logger_1 = __importDefault(require("../../logger"));
 /**
  * Implements an abstract dialog to invite people to the conference.
  */

@@ -1,18 +1,21 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const actionTypes_1 = require("../base/conference/actionTypes");
 const actionTypes_2 = require("../base/participants/actionTypes");
 const actions_1 = require("../base/participants/actions");
 const functions_1 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actions_2 = require("../base/settings/actions");
 const actions_3 = require("../filmstrip/actions");
 const actions_any_1 = require("../video-layout/actions.any");
 const actions_4 = require("./actions");
 const constants_1 = require("./constants");
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 require("./subscriber");
 /**
  * The timeout after which a follow-me command that has been received will be

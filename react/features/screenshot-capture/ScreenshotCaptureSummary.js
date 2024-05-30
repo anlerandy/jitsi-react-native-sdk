@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 require("image-capture");
 require("./createImageBitmap");
@@ -9,7 +12,7 @@ const functions_3 = require("../base/participants/functions");
 const helpers_1 = require("../base/util/helpers");
 const functions_any_1 = require("../dynamic-branding/functions.any");
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 // eslint-disable-next-line lines-around-comment
 // @ts-ignore
 const processScreenshot_1 = require("./processScreenshot");

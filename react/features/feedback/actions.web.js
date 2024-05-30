@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.submitFeedback = exports.sendJaasFeedbackMetadata = exports.openFeedbackDialog = exports.maybeOpenFeedbackDialog = exports.cancelFeedback = void 0;
 // @ts-expect-error
@@ -6,7 +9,7 @@ const UIErrors_1 = require("../../../modules/UI/UIErrors");
 const actions_1 = require("../base/dialog/actions");
 const functions_any_1 = require("../dynamic-branding/functions.any");
 const actionTypes_1 = require("./actionTypes");
-const FeedbackDialog_web_1 = require("./components/FeedbackDialog.web");
+const FeedbackDialog_web_1 = __importDefault(require("./components/FeedbackDialog.web"));
 const functions_web_1 = require("./functions.web");
 /**
  * Caches the passed in feedback in the redux store.

@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const uuid_1 = require("uuid");
-const zxcvbn_1 = require("zxcvbn");
+const zxcvbn_1 = __importDefault(require("zxcvbn"));
 // The null UUID.
 const NIL_UUID = (0, uuid_1.parse)(uuid_1.NIL);
 const _zxcvbnCache = new Map();

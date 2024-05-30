@@ -1,26 +1,52 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importStar(require("react"));
 const react_i18next_1 = require("react-i18next");
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const actions_1 = require("../../../av-moderation/actions");
-const participantsPaneTheme_json_1 = require("../../../base/components/themes/participantsPaneTheme.json");
+const participantsPaneTheme_json_1 = __importDefault(require("../../../base/components/themes/participantsPaneTheme.json"));
 const constants_1 = require("../../../base/media/constants");
 const functions_1 = require("../../../base/participants/functions");
 const functions_web_1 = require("../../../base/styles/functions.web");
-const Input_1 = require("../../../base/ui/components/web/Input");
-const useContextMenu_web_1 = require("../../../base/ui/hooks/useContextMenu.web");
+const Input_1 = __importDefault(require("../../../base/ui/components/web/Input"));
+const useContextMenu_web_1 = __importDefault(require("../../../base/ui/hooks/useContextMenu.web"));
 const strings_web_1 = require("../../../base/util/strings.web");
 const functions_2 = require("../../../breakout-rooms/functions");
 const functions_web_2 = require("../../../toolbox/functions.web");
 const actions_web_1 = require("../../../video-menu/actions.web");
 const functions_3 = require("../../functions");
 const hooks_1 = require("../../hooks");
-const RenameButton_1 = require("../breakout-rooms/components/web/RenameButton");
+const RenameButton_1 = __importDefault(require("../breakout-rooms/components/web/RenameButton"));
 const InviteButton_1 = require("./InviteButton");
-const MeetingParticipantContextMenu_1 = require("./MeetingParticipantContextMenu");
-const MeetingParticipantItems_1 = require("./MeetingParticipantItems");
+const MeetingParticipantContextMenu_1 = __importDefault(require("./MeetingParticipantContextMenu"));
+const MeetingParticipantItems_1 = __importDefault(require("./MeetingParticipantItems"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         headingW: {

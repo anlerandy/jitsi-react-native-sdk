@@ -1,19 +1,22 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const actions_web_1 = require("../../base/devices/actions.web");
-const AbstractDialogTab_1 = require("../../base/dialog/components/web/AbstractDialogTab");
+const AbstractDialogTab_1 = __importDefault(require("../../base/dialog/components/web/AbstractDialogTab"));
 const functions_1 = require("../../base/i18n/functions");
 const functions_web_1 = require("../../base/lib-jitsi-meet/functions.web");
-const Checkbox_1 = require("../../base/ui/components/web/Checkbox");
+const Checkbox_1 = __importDefault(require("../../base/ui/components/web/Checkbox"));
 const functions_2 = require("../../visitors/functions");
-const logger_1 = require("../logger");
-const AudioInputPreview_1 = require("./AudioInputPreview");
-const AudioOutputPreview_1 = require("./AudioOutputPreview");
-const DeviceHidContainer_web_1 = require("./DeviceHidContainer.web");
-const DeviceSelector_web_1 = require("./DeviceSelector.web");
+const logger_1 = __importDefault(require("../logger"));
+const AudioInputPreview_1 = __importDefault(require("./AudioInputPreview"));
+const AudioOutputPreview_1 = __importDefault(require("./AudioOutputPreview"));
+const DeviceHidContainer_web_1 = __importDefault(require("./DeviceHidContainer.web"));
+const DeviceSelector_web_1 = __importDefault(require("./DeviceSelector.web"));
 const styles = (theme) => {
     return {
         container: {

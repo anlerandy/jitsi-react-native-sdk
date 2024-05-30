@@ -1,19 +1,22 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
 const functions_1 = require("../../analytics/functions");
 const functions_2 = require("../../base/i18n/functions");
-const Icon_1 = require("../../base/icons/components/Icon");
+const Icon_1 = __importDefault(require("../../base/icons/components/Icon"));
 const svg_1 = require("../../base/icons/svg");
-const AbstractPage_1 = require("../../base/react/components/AbstractPage");
-const Spinner_1 = require("../../base/ui/components/web/Spinner");
+const AbstractPage_1 = __importDefault(require("../../base/react/components/AbstractPage"));
+const Spinner_1 = __importDefault(require("../../base/ui/components/web/Spinner"));
 const actions_web_1 = require("../../settings/actions.web");
 const constants_1 = require("../../settings/constants");
 const actions_web_2 = require("../actions.web");
 const constants_2 = require("../constants");
-const CalendarListContent_web_1 = require("./CalendarListContent.web");
+const CalendarListContent_web_1 = __importDefault(require("./CalendarListContent.web"));
 /**
  * Component to display a list of events from the user's calendar.
  */

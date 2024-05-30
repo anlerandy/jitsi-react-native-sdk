@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actions_1 = require("../../notifications/actions");
 const functions_1 = require("../../prejoin/functions");
 const actions_web_1 = require("../devices/actions.web");
 const actions_2 = require("../media/actions");
 const constants_1 = require("../media/constants");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const actionTypes_1 = require("./actionTypes");
 const actions_web_2 = require("./actions.web");
 const functions_web_1 = require("./functions.web");

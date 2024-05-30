@@ -1,16 +1,19 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
-const BaseApp_1 = require("../../../base/app/components/BaseApp");
+const BaseApp_1 = __importDefault(require("../../../base/app/components/BaseApp"));
 const actions_1 = require("../../../base/config/actions");
 const functions_web_1 = require("../../../base/tracks/functions.web");
-const GlobalStyles_web_1 = require("../../../base/ui/components/GlobalStyles.web");
-const JitsiThemeProvider_web_1 = require("../../../base/ui/components/JitsiThemeProvider.web");
-const DialogContainer_1 = require("../../../base/ui/components/web/DialogContainer");
+const GlobalStyles_web_1 = __importDefault(require("../../../base/ui/components/GlobalStyles.web"));
+const JitsiThemeProvider_web_1 = __importDefault(require("../../../base/ui/components/JitsiThemeProvider.web"));
+const DialogContainer_1 = __importDefault(require("../../../base/ui/components/web/DialogContainer"));
 const actions_web_1 = require("../../../conference/actions.web");
 const actions_web_2 = require("../../actions.web");
-const PrejoinThirdParty_1 = require("./PrejoinThirdParty");
+const PrejoinThirdParty_1 = __importDefault(require("./PrejoinThirdParty"));
 /**
  * Wrapper application for prejoin.
  *

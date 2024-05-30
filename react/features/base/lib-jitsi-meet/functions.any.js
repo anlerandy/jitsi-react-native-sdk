@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isFatalJitsiConnectionError = exports.isFatalJitsiConferenceError = exports.isAnalyticsEnabled = exports.createLocalTrack = void 0;
 const functions_1 = require("../redux/functions");
-const _1 = require("./_");
+const _1 = __importDefault(require("./_"));
 const JitsiConferenceErrors = _1.default.errors.conference;
 const JitsiConnectionErrors = _1.default.errors.connection;
 /**

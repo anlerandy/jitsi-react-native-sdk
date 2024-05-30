@@ -1,26 +1,52 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importStar(require("react"));
 const react_i18next_1 = require("react-i18next");
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");
-const Popover_web_1 = require("../../../base/popover/components/Popover.web");
-const ContextMenu_1 = require("../../../base/ui/components/web/ContextMenu");
-const ContextMenuItemGroup_1 = require("../../../base/ui/components/web/ContextMenuItemGroup");
+const Popover_web_1 = __importDefault(require("../../../base/popover/components/Popover.web"));
+const ContextMenu_1 = __importDefault(require("../../../base/ui/components/web/ContextMenu"));
+const ContextMenuItemGroup_1 = __importDefault(require("../../../base/ui/components/web/ContextMenuItemGroup"));
 const actions_1 = require("../../../gifs/actions");
 const functions_web_1 = require("../../../gifs/functions.web");
-const ReactionEmoji_1 = require("../../../reactions/components/web/ReactionEmoji");
-const ReactionsMenu_1 = require("../../../reactions/components/web/ReactionsMenu");
+const ReactionEmoji_1 = __importDefault(require("../../../reactions/components/web/ReactionEmoji"));
+const ReactionsMenu_1 = __importDefault(require("../../../reactions/components/web/ReactionsMenu"));
 const constants_1 = require("../../../reactions/constants");
 const functions_any_1 = require("../../../reactions/functions.any");
 const types_1 = require("../../../reactions/types");
 const constants_2 = require("../../constants");
 const functions_web_2 = require("../../functions.web");
-const Drawer_1 = require("./Drawer");
-const JitsiPortal_1 = require("./JitsiPortal");
-const OverflowToggleButton_1 = require("./OverflowToggleButton");
+const Drawer_1 = __importDefault(require("./Drawer"));
+const JitsiPortal_1 = __importDefault(require("./JitsiPortal"));
+const OverflowToggleButton_1 = __importDefault(require("./OverflowToggleButton"));
 const useStyles = (0, mui_1.makeStyles)()((_theme, { reactionsMenuHeight, overflowDrawer }) => {
     return {
         overflowMenuDrawer: {

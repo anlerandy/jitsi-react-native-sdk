@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.canAddTranscriber = exports.isRecorderTranscriptionsRunning = exports.isTranscribing = exports.determineTranscriptionLanguage = void 0;
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const functions_1 = require("../base/jwt/functions");
 const functions_2 = require("../base/participants/functions");
-const jitsi_bcp47_map_json_1 = require("./jitsi-bcp47-map.json");
-const logger_1 = require("./logger");
-const transcriber_langs_json_1 = require("./transcriber-langs.json");
+const jitsi_bcp47_map_json_1 = __importDefault(require("./jitsi-bcp47-map.json"));
+const logger_1 = __importDefault(require("./logger"));
+const transcriber_langs_json_1 = __importDefault(require("./transcriber-langs.json"));
 const DEFAULT_TRANSCRIBER_LANG = 'en-US';
 /**
  * Determine which language to use for transcribing.

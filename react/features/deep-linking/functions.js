@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.openDesktopApp = exports.getDeepLinkingPage = exports.generateDeepLinkingURL = void 0;
 const utils_1 = require("../base/environment/utils");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
-const Platform_1 = require("../base/react/Platform");
+const Platform_1 = __importDefault(require("../base/react/Platform"));
 const uri_1 = require("../base/util/uri");
 const functions_1 = require("../jaas/functions");
-const DeepLinkingDesktopPage_1 = require("./components/DeepLinkingDesktopPage");
-const DeepLinkingMobilePage_1 = require("./components/DeepLinkingMobilePage");
-const NoMobileApp_1 = require("./components/NoMobileApp");
+const DeepLinkingDesktopPage_1 = __importDefault(require("./components/DeepLinkingDesktopPage"));
+const DeepLinkingMobilePage_1 = __importDefault(require("./components/DeepLinkingMobilePage"));
+const NoMobileApp_1 = __importDefault(require("./components/NoMobileApp"));
 const openDesktopApp_1 = require("./openDesktopApp");
 /**
  * Generates a deep linking URL based on the current window URL.

@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.decodeFromBase64URL = exports.encodeToBase64URL = exports.doGetJSON = void 0;
-const base64_js_1 = require("base64-js");
+const base64_js_1 = __importDefault(require("base64-js"));
 const timeoutPromise_1 = require("./timeoutPromise");
 /**
  * The number of milliseconds before deciding that we need retry a fetch request.

@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getWhiteboardInfoForURIString = exports.shouldNotifyUserLimit = exports.shouldEnforceUserLimit = exports.isWhiteboardAllowed = exports.isWhiteboardVisible = exports.getCollabServerUrl = exports.generateCollabServerUrl = exports.isWhiteboardPresent = exports.isWhiteboardButtonVisible = exports.isWhiteboardOpen = exports.isWhiteboardEnabled = exports.getCollabDetails = exports.getWhiteboardConfig = void 0;
-const js_md5_1 = require("js-md5");
+const js_md5_1 = __importDefault(require("js-md5"));
 const functions_1 = require("../../features/base/participants/functions");
 const functions_2 = require("../base/conference/functions");
 const functions_3 = require("../base/participants/functions");

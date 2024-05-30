@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useKeyboardShortcuts = void 0;
 const react_1 = require("react");
@@ -6,7 +9,7 @@ const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../analytics/AnalyticsEvents");
 const functions_1 = require("../analytics/functions");
 const actions_1 = require("../base/dialog/actions");
-const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importDefault(require("../base/lib-jitsi-meet"));
 const actions_2 = require("../base/participants/actions");
 const functions_2 = require("../base/participants/functions");
 const actions_web_1 = require("../chat/actions.web");
@@ -21,11 +24,11 @@ const constants_1 = require("../reactions/constants");
 const functions_any_1 = require("../reactions/functions.any");
 const actions_web_4 = require("../screen-share/actions.web");
 const functions_4 = require("../screen-share/functions");
-const SpeakerStats_1 = require("../speaker-stats/components/web/SpeakerStats");
+const SpeakerStats_1 = __importDefault(require("../speaker-stats/components/web/SpeakerStats"));
 const functions_5 = require("../speaker-stats/functions");
 const actions_any_3 = require("../video-layout/actions.any");
 const functions_any_2 = require("../video-layout/functions.any");
-const VideoQualityDialog_web_1 = require("../video-quality/components/VideoQualityDialog.web");
+const VideoQualityDialog_web_1 = __importDefault(require("../video-quality/components/VideoQualityDialog.web"));
 const actions_web_5 = require("./actions.web");
 const functions_web_1 = require("./functions.web");
 const useKeyboardShortcuts = (toolbarButtons) => {

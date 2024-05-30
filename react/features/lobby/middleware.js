@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const react_redux_1 = require("react-redux");
 const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
 const actions_1 = require("../base/conference/actions");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_1 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actions_2 = require("../base/sounds/actions");
 const functions_2 = require("../base/testing/functions");
 const constants_any_1 = require("../base/ui/constants.any");

@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const functions_1 = require("../../../features/e2ee/functions");
 const functions_2 = require("../../../features/recording/functions");
 const constants_1 = require("../media/constants");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../redux/StateListenerRegistry"));
 const actionTypes_1 = require("./actionTypes");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Implements the entry point of the middleware of the feature base/sounds.
  *

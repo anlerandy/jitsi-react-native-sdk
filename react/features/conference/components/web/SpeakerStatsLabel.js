@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const actions_1 = require("../../../base/dialog/actions");
 const svg_1 = require("../../../base/icons/svg");
-const Label_1 = require("../../../base/label/components/web/Label");
+const Label_1 = __importDefault(require("../../../base/label/components/web/Label"));
 const constants_1 = require("../../../base/label/constants");
 const functions_1 = require("../../../base/participants/functions");
-const SpeakerStats_1 = require("../../../speaker-stats/components/web/SpeakerStats");
+const SpeakerStats_1 = __importDefault(require("../../../speaker-stats/components/web/SpeakerStats"));
 const functions_2 = require("../../../speaker-stats/functions");
 const functions_3 = require("../../../visitors/functions");
 /**

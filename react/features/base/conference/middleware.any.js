@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 // @ts-ignore
 const constants_1 = require("../../../../modules/API/constants");
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
@@ -13,7 +16,7 @@ const actions_3 = require("../../notifications/actions");
 const constants_2 = require("../../notifications/constants");
 const utils_1 = require("../../prejoin/utils");
 const actions_any_2 = require("../../recording/actions.any");
-const LocalRecordingManager_1 = require("../../recording/components/Recording/LocalRecordingManager");
+const LocalRecordingManager_1 = __importDefault(require("../../recording/components/Recording/LocalRecordingManager"));
 const functions_3 = require("../../visitors/functions");
 const actions_4 = require("../config/actions");
 const actionTypes_1 = require("../connection/actionTypes");
@@ -23,15 +26,15 @@ const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
 const actionTypes_2 = require("../participants/actionTypes");
 const constants_3 = require("../participants/constants");
 const functions_5 = require("../participants/functions");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../redux/StateListenerRegistry"));
 const actionTypes_3 = require("../tracks/actionTypes");
 const functions_any_1 = require("../tracks/functions.any");
 const actionTypes_4 = require("./actionTypes");
 const actions_6 = require("./actions");
 const constants_4 = require("./constants");
 const functions_6 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Handler for before unload event.
  */

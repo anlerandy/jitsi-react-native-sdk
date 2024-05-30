@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
 const svg_1 = require("../../../base/icons/svg");
@@ -6,7 +9,7 @@ const constants_1 = require("../../../base/jwt/constants");
 const functions_1 = require("../../../base/jwt/functions");
 const lib_jitsi_meet_1 = require("../../../base/lib-jitsi-meet");
 const functions_2 = require("../../../base/participants/functions");
-const AbstractButton_1 = require("../../../base/toolbox/components/AbstractButton");
+const AbstractButton_1 = __importDefault(require("../../../base/toolbox/components/AbstractButton"));
 const functions_3 = require("../../../breakout-rooms/functions");
 const actions_1 = require("../../../jaas/actions");
 const functions_4 = require("../../../transcribing/functions");

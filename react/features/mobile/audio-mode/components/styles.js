@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const styles_1 = require("../../../base/dialog/components/native/styles");
 const functions_any_1 = require("../../../base/styles/functions.any");
-const BaseTheme_native_1 = require("../../../base/ui/components/BaseTheme.native");
+const BaseTheme_native_1 = __importDefault(require("../../../base/ui/components/BaseTheme.native"));
 /**
  * The React {@code Component} styles of {@code AudioRoutePickerDialog}.
  *

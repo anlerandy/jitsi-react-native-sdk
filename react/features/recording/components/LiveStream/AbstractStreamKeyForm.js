@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
-const debounce_1 = require("lodash/debounce");
+const debounce_1 = __importDefault(require("lodash/debounce"));
 const react_1 = require("react");
 const functions_1 = require("./functions");
 /**

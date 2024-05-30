@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const i18next_browser_languagedetector_1 = require("i18next-browser-languagedetector");
-const configLanguageDetector_1 = require("./configLanguageDetector");
-const customNavigatorDetector_1 = require("./customNavigatorDetector");
+const i18next_browser_languagedetector_1 = __importDefault(require("i18next-browser-languagedetector"));
+const configLanguageDetector_1 = __importDefault(require("./configLanguageDetector"));
+const customNavigatorDetector_1 = __importDefault(require("./customNavigatorDetector"));
 /**
  * The ordered list (by name) of language detectors to be utilized as backends
  * by the singleton language detector for Web.

@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // eslint-disable-next-line lines-around-comment
-const react_1 = require("react");
-const Avatar_1 = require("../../../base/avatar/components/Avatar");
-const StatelessAvatar_1 = require("../../../base/avatar/components/web/StatelessAvatar");
+const react_1 = __importDefault(require("react"));
+const Avatar_1 = __importDefault(require("../../../base/avatar/components/Avatar"));
+const StatelessAvatar_1 = __importDefault(require("../../../base/avatar/components/web/StatelessAvatar"));
 const functions_1 = require("../../../base/avatar/functions");
 const svg_1 = require("../../../base/icons/svg");
-const BaseTheme_web_1 = require("../../../base/ui/components/BaseTheme.web");
-const TimeElapsed_1 = require("./TimeElapsed");
-const Timeline_1 = require("./Timeline");
+const BaseTheme_web_1 = __importDefault(require("../../../base/ui/components/BaseTheme.web"));
+const TimeElapsed_1 = __importDefault(require("./TimeElapsed"));
+const Timeline_1 = __importDefault(require("./Timeline"));
 const SpeakerStatsItem = (props) => {
     const rowDisplayClass = `row item ${props.hasLeft ? 'has-left' : ''}`;
     const nameTimeClass = `name-time${props.showFaceExpressions ? ' expressions-on' : ''}`;

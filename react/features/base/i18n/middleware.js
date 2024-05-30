@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../../dynamic-branding/actionTypes");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const actionTypes_2 = require("./actionTypes");
 const functions_1 = require("./functions");
-const i18next_1 = require("./i18next");
-const logger_1 = require("./logger");
+const i18next_1 = __importDefault(require("./i18next"));
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Implements the entry point of the middleware of the feature base/i18n.
  *

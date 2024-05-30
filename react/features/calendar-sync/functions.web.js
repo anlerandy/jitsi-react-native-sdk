@@ -13,6 +13,9 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._getCalendarIntegration = exports._fetchCalendarEntries = exports.isCalendarEnabled = void 0;
 const functions_1 = require("../base/redux/functions");
@@ -20,7 +23,7 @@ const actions_web_1 = require("./actions.web");
 __exportStar(require("./functions.any"), exports);
 const constants_1 = require("./constants");
 const functions_web_1 = require("./functions.web");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const googleCalendar_1 = require("./web/googleCalendar");
 const microsoftCalendar_1 = require("./web/microsoftCalendar");
 /**

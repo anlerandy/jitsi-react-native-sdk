@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const actionTypes_1 = require("../connection/actionTypes");
 const actions_1 = require("../participants/actions");
 const functions_1 = require("../participants/functions");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const parseURLParams_1 = require("../util/parseURLParams");
 const actionTypes_2 = require("./actionTypes");
 const actions_2 = require("./actions");

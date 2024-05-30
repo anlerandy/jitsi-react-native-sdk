@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/conference/actionTypes");
 const actionTypes_2 = require("../base/participants/actionTypes");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actionTypes_3 = require("../base/tracks/actionTypes");
 const actionTypes_4 = require("../face-landmarks/actionTypes");
 const functions_1 = require("../jaas/functions");
-const RTCStats_1 = require("./RTCStats");
+const RTCStats_1 = __importDefault(require("./RTCStats"));
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Middleware which intercepts lib-jitsi-meet initialization and conference join in order init the
  * rtcstats-client.

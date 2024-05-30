@@ -1,16 +1,19 @@
 "use strict";
 /* eslint-disable react/jsx-no-bind */
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const functions_web_1 = require("../../../base/styles/functions.web");
-const Button_1 = require("../../../base/ui/components/web/Button");
-const Checkbox_1 = require("../../../base/ui/components/web/Checkbox");
+const Button_1 = __importDefault(require("../../../base/ui/components/web/Button"));
+const Checkbox_1 = __importDefault(require("../../../base/ui/components/web/Checkbox"));
 const constants_web_1 = require("../../../base/ui/constants.web");
 const actions_1 = require("../../actions");
 const functions_1 = require("../../functions");
-const AbstractPollAnswer_1 = require("../AbstractPollAnswer");
+const AbstractPollAnswer_1 = __importDefault(require("../AbstractPollAnswer"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         container: {

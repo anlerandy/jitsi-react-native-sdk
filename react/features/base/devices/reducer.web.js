@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const ReducerRegistry_1 = require("../redux/ReducerRegistry");
+const ReducerRegistry_1 = __importDefault(require("../redux/ReducerRegistry"));
 const actionTypes_1 = require("./actionTypes");
 const functions_web_1 = require("./functions.web");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const DEFAULT_STATE = {
     availableDevices: {
         audioInput: [],

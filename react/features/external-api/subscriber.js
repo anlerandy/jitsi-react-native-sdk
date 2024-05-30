@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const functions_1 = require("../base/participants/functions");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const functions_2 = require("../display-name/functions");
 const functions_3 = require("../video-layout/functions");
 /**

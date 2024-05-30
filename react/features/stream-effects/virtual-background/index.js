@@ -1,15 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createVirtualBackgroundEffect = void 0;
 const actions_1 = require("../../notifications/actions");
 const constants_1 = require("../../notifications/constants");
 const functions_1 = require("../../virtual-background/functions");
-const logger_1 = require("../../virtual-background/logger");
-const JitsiStreamBackgroundEffect_1 = require("./JitsiStreamBackgroundEffect");
+const logger_1 = __importDefault(require("../../virtual-background/logger"));
+const JitsiStreamBackgroundEffect_1 = __importDefault(require("./JitsiStreamBackgroundEffect"));
 // @ts-expect-error
-const tflite_1 = require("./vendor/tflite/tflite");
+const tflite_1 = __importDefault(require("./vendor/tflite/tflite"));
 // @ts-expect-error
-const tflite_simd_1 = require("./vendor/tflite/tflite-simd");
+const tflite_simd_1 = __importDefault(require("./vendor/tflite/tflite-simd"));
 const models = {
     modelLandscape: 'libs/selfie_segmentation_landscape.tflite'
 };

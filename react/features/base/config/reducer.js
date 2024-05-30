@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const constants_1 = require("../../conference/components/constants");
 const constants_2 = require("../../toolbox/constants");
 const actionTypes_1 = require("../connection/actionTypes");
-const ReducerRegistry_1 = require("../redux/ReducerRegistry");
+const ReducerRegistry_1 = __importDefault(require("../redux/ReducerRegistry"));
 const functions_1 = require("../redux/functions");
 const actionTypes_2 = require("./actionTypes");
 const functions_2 = require("./functions");

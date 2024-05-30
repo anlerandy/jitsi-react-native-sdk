@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isAutoAssignParticipantsVisible = exports.isAddBreakoutRoomButtonVisible = exports.getBreakoutRoomsConfig = exports.isInBreakoutRoom = exports.getCurrentRoomId = exports.getRoomByJid = exports.getRoomsInfo = exports.getMainRoom = exports.getBreakoutRooms = void 0;
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const functions_1 = require("../base/conference/functions");
 const functions_2 = require("../base/participants/functions");
 const functions_3 = require("../base/redux/functions");

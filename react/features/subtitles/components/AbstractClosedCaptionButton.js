@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._abstractMapStateToProps = exports.AbstractClosedCaptionButton = void 0;
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
 const functions_1 = require("../../analytics/functions");
 const constants_1 = require("../../base/jwt/constants");
-const AbstractButton_1 = require("../../base/toolbox/components/AbstractButton");
+const AbstractButton_1 = __importDefault(require("../../base/toolbox/components/AbstractButton"));
 const actions_1 = require("../../jaas/actions");
 const functions_any_1 = require("../functions.any");
 /**

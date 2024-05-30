@@ -13,14 +13,17 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setAudioOutputDeviceId = exports.logDevices = exports.getVideoDeviceIds = exports.getAudioOutputDeviceData = exports.getAudioInputDeviceData = exports.formatDeviceLabel = exports.flattenAvailableDevices = exports.areDevicesDifferent = exports.filterIgnoredDevices = exports.filterAudioDevices = exports.groupDevicesByKind = exports.getDevicesFromURL = exports.getDeviceLabelById = exports.getDeviceIdByLabel = exports.getDefaultDeviceId = exports.getAudioOutputDeviceId = exports.areDeviceLabelsInitialized = void 0;
-const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importDefault(require("../lib-jitsi-meet"));
 const actions_1 = require("../settings/actions");
 const functions_web_1 = require("../sounds/functions.web");
 const parseURLParams_1 = require("../util/parseURLParams");
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 __exportStar(require("./functions.any"), exports);
 const webrtcKindToJitsiKindTranslator = {
     audioinput: 'audioInput',

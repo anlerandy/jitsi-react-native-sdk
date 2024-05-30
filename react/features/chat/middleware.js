@@ -1,15 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleLobbyMessageReceived = void 0;
 const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
 const functions_1 = require("../base/conference/functions");
 const actions_1 = require("../base/dialog/actions");
-const i18next_1 = require("../base/i18n/i18next");
+const i18next_1 = __importDefault(require("../base/i18n/i18next"));
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_2 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actions_2 = require("../base/sounds/actions");
 const actions_3 = require("../gifs/actions");
 const constants_1 = require("../gifs/constants");

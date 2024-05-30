@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setVideoQuality = exports.setPreferredVideoQuality = exports.setMaxReceiverVideoQualityForVerticalFilmstrip = exports.setMaxReceiverVideoQualityForTileView = exports.setMaxReceiverVideoQualityForStageFilmstrip = exports.setMaxReceiverVideoQualityForScreenSharingFilmstrip = exports.setMaxReceiverVideoQualityForLargeVideo = void 0;
 const actionTypes_1 = require("./actionTypes");
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Sets the max frame height that should be received for the large video.
  *

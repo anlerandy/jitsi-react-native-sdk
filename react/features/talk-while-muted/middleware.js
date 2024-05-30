@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
@@ -7,7 +10,7 @@ const actions_1 = require("../base/media/actions");
 const constants_1 = require("../base/media/constants");
 const actions_2 = require("../base/participants/actions");
 const functions_1 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actions_3 = require("../base/sounds/actions");
 const actions_4 = require("../notifications/actions");
 const constants_2 = require("../notifications/constants");

@@ -13,16 +13,19 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.showStartRecordingNotification = exports.showRecordingLimitNotification = void 0;
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const actions_1 = require("../base/dialog/actions");
-const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importDefault(require("../base/lib-jitsi-meet"));
 const actions_2 = require("../notifications/actions");
 const constants_1 = require("../notifications/constants");
 const actions_any_1 = require("./actions.any");
 const Recording_1 = require("./components/Recording");
-const RecordingLimitNotificationDescription_1 = require("./components/web/RecordingLimitNotificationDescription");
+const RecordingLimitNotificationDescription_1 = __importDefault(require("./components/web/RecordingLimitNotificationDescription"));
 __exportStar(require("./actions.any"), exports);
 /**
  * Signals that a started recording notification should be shown on the

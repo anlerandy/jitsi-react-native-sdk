@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
 const react_1 = require("react");
@@ -10,7 +13,7 @@ const actions_any_1 = require("../../../subtitles/actions.any");
 const actions_2 = require("../../actions");
 const constants_1 = require("../../constants");
 const functions_2 = require("../../functions");
-const LocalRecordingManager_1 = require("./LocalRecordingManager");
+const LocalRecordingManager_1 = __importDefault(require("./LocalRecordingManager"));
 /**
  * Abstract React Component for getting confirmation to stop a file recording
  * session in progress.

@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = require("react");
-const logger_1 = require("../logger");
+const logger_1 = __importDefault(require("../logger"));
 /**
  * The React {@link Component} which is similar to Web's
  * {@code HTMLAudioElement}.

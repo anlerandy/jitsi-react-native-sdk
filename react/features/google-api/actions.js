@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateCalendarEvent = exports.updateProfile = exports.signOut = exports.signIn = exports.showAccountSelection = exports.setGoogleAPIState = exports.requestLiveStreamsForYouTubeBroadcast = exports.requestAvailableYouTubeBroadcasts = exports.loadGoogleAPI = exports.getCalendarEntries = void 0;
 const functions_1 = require("../invite/functions");
@@ -7,7 +10,7 @@ const actionTypes_1 = require("./actionTypes");
 const constants_1 = require("./constants");
 // eslint-disable-next-line lines-around-comment
 // @ts-ignore
-const googleApi_1 = require("./googleApi");
+const googleApi_1 = __importDefault(require("./googleApi"));
 /**
  * Retrieves the current calendar events.
  *

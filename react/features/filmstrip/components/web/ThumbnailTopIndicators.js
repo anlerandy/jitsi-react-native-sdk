@@ -1,17 +1,20 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const utils_1 = require("../../../base/environment/utils");
 const functions_1 = require("../../../base/participants/functions");
-const ConnectionIndicator_1 = require("../../../connection-indicator/components/web/ConnectionIndicator");
+const ConnectionIndicator_1 = __importDefault(require("../../../connection-indicator/components/web/ConnectionIndicator"));
 const constants_1 = require("../../constants");
 const functions_web_1 = require("../../functions.web");
-const PinnedIndicator_1 = require("./PinnedIndicator");
-const RaisedHandIndicator_1 = require("./RaisedHandIndicator");
-const StatusIndicators_1 = require("./StatusIndicators");
-const VideoMenuTriggerButton_1 = require("./VideoMenuTriggerButton");
+const PinnedIndicator_1 = __importDefault(require("./PinnedIndicator"));
+const RaisedHandIndicator_1 = __importDefault(require("./RaisedHandIndicator"));
+const StatusIndicators_1 = __importDefault(require("./StatusIndicators"));
+const VideoMenuTriggerButton_1 = __importDefault(require("./VideoMenuTriggerButton"));
 const useStyles = (0, mui_1.makeStyles)()(() => {
     return {
         container: {

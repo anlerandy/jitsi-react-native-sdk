@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const functions_1 = require("./functions");
 /**
  * Listens for changes to the screensharing status of the remote participants to recompute the reordered list of the

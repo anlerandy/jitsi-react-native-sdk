@@ -1,39 +1,42 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
-const react_1 = require("react");
+const lodash_1 = __importDefault(require("lodash"));
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 // @ts-expect-error
-const VideoLayout_1 = require("../../../../../modules/UI/videolayout/VideoLayout");
+const VideoLayout_1 = __importDefault(require("../../../../../modules/UI/videolayout/VideoLayout"));
 const functions_1 = require("../../../base/conference/functions");
 const actions_web_1 = require("../../../base/connection/actions.web");
 const utils_1 = require("../../../base/environment/utils");
 const functions_2 = require("../../../base/i18n/functions");
 const helpers_1 = require("../../../base/util/helpers");
-const Chat_1 = require("../../../chat/components/web/Chat");
-const MainFilmstrip_1 = require("../../../filmstrip/components/web/MainFilmstrip");
-const ScreenshareFilmstrip_1 = require("../../../filmstrip/components/web/ScreenshareFilmstrip");
-const StageFilmstrip_1 = require("../../../filmstrip/components/web/StageFilmstrip");
-const CalleeInfoContainer_1 = require("../../../invite/components/callee-info/CalleeInfoContainer");
-const LargeVideo_web_1 = require("../../../large-video/components/LargeVideo.web");
-const LobbyScreen_1 = require("../../../lobby/components/web/LobbyScreen");
+const Chat_1 = __importDefault(require("../../../chat/components/web/Chat"));
+const MainFilmstrip_1 = __importDefault(require("../../../filmstrip/components/web/MainFilmstrip"));
+const ScreenshareFilmstrip_1 = __importDefault(require("../../../filmstrip/components/web/ScreenshareFilmstrip"));
+const StageFilmstrip_1 = __importDefault(require("../../../filmstrip/components/web/StageFilmstrip"));
+const CalleeInfoContainer_1 = __importDefault(require("../../../invite/components/callee-info/CalleeInfoContainer"));
+const LargeVideo_web_1 = __importDefault(require("../../../large-video/components/LargeVideo.web"));
+const LobbyScreen_1 = __importDefault(require("../../../lobby/components/web/LobbyScreen"));
 const functions_3 = require("../../../lobby/functions");
 const functions_web_1 = require("../../../overlay/functions.web");
-const ParticipantsPane_1 = require("../../../participants-pane/components/web/ParticipantsPane");
-const Prejoin_1 = require("../../../prejoin/components/web/Prejoin");
+const ParticipantsPane_1 = __importDefault(require("../../../participants-pane/components/web/ParticipantsPane"));
+const Prejoin_1 = __importDefault(require("../../../prejoin/components/web/Prejoin"));
 const functions_4 = require("../../../prejoin/functions");
-const ReactionsAnimations_1 = require("../../../reactions/components/web/ReactionsAnimations");
+const ReactionsAnimations_1 = __importDefault(require("../../../reactions/components/web/ReactionsAnimations"));
 const actions_any_1 = require("../../../toolbox/actions.any");
 const actions_web_2 = require("../../../toolbox/actions.web");
-const JitsiPortal_1 = require("../../../toolbox/components/web/JitsiPortal");
-const Toolbox_1 = require("../../../toolbox/components/web/Toolbox");
+const JitsiPortal_1 = __importDefault(require("../../../toolbox/components/web/JitsiPortal"));
+const Toolbox_1 = __importDefault(require("../../../toolbox/components/web/Toolbox"));
 const constants_1 = require("../../../video-layout/constants");
 const functions_any_1 = require("../../../video-layout/functions.any");
 const actions_web_3 = require("../../actions.web");
 const functions_web_2 = require("../../functions.web");
 const AbstractConference_1 = require("../AbstractConference");
-const ConferenceInfo_1 = require("./ConferenceInfo");
-const Notice_1 = require("./Notice");
+const ConferenceInfo_1 = __importDefault(require("./ConferenceInfo"));
+const Notice_1 = __importDefault(require("./Notice"));
 /**
  * DOM events for when full screen mode has changed. Different browsers need
  * different vendor prefixes.

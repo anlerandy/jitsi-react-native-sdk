@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_redux_1 = require("react-redux");
 const actionTypes_1 = require("../base/conference/actionTypes");
@@ -8,12 +11,12 @@ const actionTypes_2 = require("../base/participants/actionTypes");
 const actions_1 = require("../base/participants/actions");
 const functions_2 = require("../base/participants/functions");
 const types_1 = require("../base/participants/types");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actionTypes_3 = require("./actionTypes");
 const actions_any_1 = require("./actions.any");
 const constants_2 = require("./constants");
 const functions_3 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Middleware that captures actions related to video sharing and updates
  * components not hooked into redux.

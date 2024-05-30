@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.formatURLText = exports.getFieldValue = void 0;
-const punycode_1 = require("punycode");
+const punycode_1 = __importDefault(require("punycode"));
 /**
  * Returns the field value in a platform generic way.
  *

@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const AbstractContainer_1 = require("../AbstractContainer");
+const AbstractContainer_1 = __importDefault(require("../AbstractContainer"));
 /**
  * Represents a container of React/Web {@link Component} children with a style.
  *

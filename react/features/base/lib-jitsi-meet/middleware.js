@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../config/actionTypes");
 const actionTypes_2 = require("../net-info/actionTypes");
 const actionTypes_3 = require("../participants/actionTypes");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
-const _1 = require("./_");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
+const _1 = __importDefault(require("./_"));
 const actions_1 = require("./actions");
 /**
  * Middleware that captures PARTICIPANT_LEFT action for a local participant

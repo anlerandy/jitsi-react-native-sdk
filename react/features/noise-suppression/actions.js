@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setNoiseSuppressionEnabled = exports.toggleNoiseSuppression = exports.setNoiseSuppressionEnabledState = void 0;
 const functions_1 = require("../base/tracks/functions");
@@ -7,7 +10,7 @@ const constants_1 = require("../notifications/constants");
 const NoiseSuppressionEffect_1 = require("../stream-effects/noise-suppression/NoiseSuppressionEffect");
 const actionTypes_1 = require("./actionTypes");
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Updates the noise suppression active state.
  *

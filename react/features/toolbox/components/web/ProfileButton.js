@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");
 const functions_2 = require("../../../base/i18n/functions");
 const functions_3 = require("../../../base/participants/functions");
-const AbstractButton_1 = require("../../../base/toolbox/components/AbstractButton");
+const AbstractButton_1 = __importDefault(require("../../../base/toolbox/components/AbstractButton"));
 const actions_1 = require("../../../settings/actions");
 const constants_1 = require("../../../settings/constants");
-const ProfileButtonAvatar_1 = require("./ProfileButtonAvatar");
+const ProfileButtonAvatar_1 = __importDefault(require("./ProfileButtonAvatar"));
 /**
  * Implementation of a button for opening profile dialog.
  */

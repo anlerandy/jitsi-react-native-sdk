@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.App = void 0;
-const react_1 = require("react");
-const GlobalStyles_web_1 = require("../../base/ui/components/GlobalStyles.web");
-const JitsiThemeProvider_web_1 = require("../../base/ui/components/JitsiThemeProvider.web");
-const DialogContainer_1 = require("../../base/ui/components/web/DialogContainer");
-const ChromeExtensionBanner_web_1 = require("../../chrome-extension-banner/components/ChromeExtensionBanner.web");
-const OverlayContainer_1 = require("../../overlay/components/web/OverlayContainer");
+const react_1 = __importDefault(require("react"));
+const GlobalStyles_web_1 = __importDefault(require("../../base/ui/components/GlobalStyles.web"));
+const JitsiThemeProvider_web_1 = __importDefault(require("../../base/ui/components/JitsiThemeProvider.web"));
+const DialogContainer_1 = __importDefault(require("../../base/ui/components/web/DialogContainer"));
+const ChromeExtensionBanner_web_1 = __importDefault(require("../../chrome-extension-banner/components/ChromeExtensionBanner.web"));
+const OverlayContainer_1 = __importDefault(require("../../overlay/components/web/OverlayContainer"));
 const AbstractApp_1 = require("./AbstractApp");
 // Register middlewares and reducers.
 require("../middlewares");

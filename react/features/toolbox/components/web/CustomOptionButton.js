@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
-const AbstractButton_1 = require("../../../base/toolbox/components/AbstractButton");
+const react_1 = __importDefault(require("react"));
+const AbstractButton_1 = __importDefault(require("../../../base/toolbox/components/AbstractButton"));
 /**
  * Component that renders a custom toolbox button.
  *

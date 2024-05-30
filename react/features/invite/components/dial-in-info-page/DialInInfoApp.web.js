@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
-const react_dom_1 = require("react-dom");
+const react_1 = __importDefault(require("react"));
+const react_dom_1 = __importDefault(require("react-dom"));
 const react_i18next_1 = require("react-i18next");
 const utils_1 = require("../../../base/environment/utils");
-const i18next_1 = require("../../../base/i18n/i18next");
+const i18next_1 = __importDefault(require("../../../base/i18n/i18next"));
 const parseURLParams_1 = require("../../../base/util/parseURLParams");
 const constants_1 = require("../../constants");
-const DialInSummary_1 = require("../dial-in-summary/web/DialInSummary");
-const NoRoomError_web_1 = require("./NoRoomError.web");
+const DialInSummary_1 = __importDefault(require("../dial-in-summary/web/DialInSummary"));
+const NoRoomError_web_1 = __importDefault(require("./NoRoomError.web"));
 /**
  * TODO: This seems unused, so we can drop it.
  */

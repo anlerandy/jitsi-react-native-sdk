@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const clsx_1 = require("clsx");
-const react_1 = require("react");
+const clsx_1 = __importDefault(require("clsx"));
+const react_1 = __importDefault(require("react"));
 const mui_1 = require("tss-react/mui");
-const AbstractDialogTab_1 = require("../../../base/dialog/components/web/AbstractDialogTab");
+const AbstractDialogTab_1 = __importDefault(require("../../../base/dialog/components/web/AbstractDialogTab"));
 const functions_1 = require("../../../base/i18n/functions");
-const Checkbox_1 = require("../../../base/ui/components/web/Checkbox");
-const Select_1 = require("../../../base/ui/components/web/Select");
+const Checkbox_1 = __importDefault(require("../../../base/ui/components/web/Checkbox"));
+const Select_1 = __importDefault(require("../../../base/ui/components/web/Select"));
 const constants_1 = require("../../../filmstrip/constants");
 const styles = (theme) => {
     return {

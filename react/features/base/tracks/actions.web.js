@@ -13,6 +13,9 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleScreenSharingError = exports.displayErrorsForCreateInitialLocalTracks = exports.createInitialAVTracks = exports.createAndAddInitialAVTracks = exports.setGUMPendingStateOnFailedTracks = exports.openAllowToggleCameraDialog = exports.setCameraFacingMode = exports.toggleScreensharing = void 0;
 // @ts-expect-error
@@ -36,9 +39,9 @@ const actions_8 = require("../media/actions");
 const constants_2 = require("../media/constants");
 const types_1 = require("../media/types");
 const actions_any_1 = require("./actions.any");
-const AllowToggleCameraDialog_1 = require("./components/web/AllowToggleCameraDialog");
+const AllowToggleCameraDialog_1 = __importDefault(require("./components/web/AllowToggleCameraDialog"));
 const functions_5 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 __exportStar(require("./actions.any"), exports);
 /**
  * Signals that the local participant is ending screensharing or beginning the screensharing flow.

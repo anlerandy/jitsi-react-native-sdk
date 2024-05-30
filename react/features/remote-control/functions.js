@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getModifiers = exports.getKey = exports.getRemoteConrolEventCaptureArea = exports.onRemoteControlAPIEvent = exports.sendRemoteControlEndpointMessage = exports.isRemoteControlEnabled = void 0;
 // @ts-expect-error
-const VideoLayout_1 = require("../../../modules/UI/videolayout/VideoLayout");
-const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
+const VideoLayout_1 = __importDefault(require("../../../modules/UI/videolayout/VideoLayout"));
+const lib_jitsi_meet_1 = __importDefault(require("../base/lib-jitsi-meet"));
 const actions_1 = require("./actions");
 const constants_1 = require("./constants");
 const keycodes_1 = require("./keycodes");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Checks if the remote control is enabled.
  *

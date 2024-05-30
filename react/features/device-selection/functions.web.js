@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.processExternalDeviceRequest = exports.getVideoDeviceSelectionDialogProps = exports.getAudioDeviceSelectionDialogProps = void 0;
 const functions_web_1 = require("../base/config/functions.web");
 const actions_web_1 = require("../base/devices/actions.web");
 const functions_web_2 = require("../base/devices/functions.web");
 const utils_1 = require("../base/environment/utils");
-const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importDefault(require("../base/lib-jitsi-meet"));
 const functions_1 = require("../base/redux/functions");
 const functions_web_3 = require("../base/settings/functions.web");
 const functions_2 = require("../noise-suppression/functions");

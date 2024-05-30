@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setShareDialogVisiblity = exports.addPeopleFeatureControl = exports.hasRaisedHand = exports.getRaiseHandsQueue = exports.isLocalParticipantModerator = exports.isIconUrl = exports.isEveryoneModerator = exports.getDominantSpeakerParticipant = exports.isParticipantModerator = exports.getPinnedParticipant = exports.getRemoteParticipantsSorted = exports.getRemoteParticipants = exports.getParticipantPresenceStatus = exports.getSourceNamesByVideoTypeAndParticipant = exports.getSourceNamesByMediaTypeAndParticipant = exports.getScreenshareParticipantIds = exports.getScreenshareParticipantDisplayName = exports.getRemoteScreensharesBasedOnPresence = exports.getParticipantDisplayName = exports.getParticipantCountWithFake = exports.getMutedStateByParticipantAndMediaType = exports.getRemoteParticipantCountWithFake = exports.isWhiteboardParticipant = exports.isSharedVideoParticipant = exports.isScreenShareParticipant = exports.isScreenShareParticipantById = exports.isRemoteScreenshareParticipant = exports.isLocalScreenshareParticipant = exports.getFakeParticipants = exports.getVirtualScreenshareParticipantOwnerId = exports.getParticipantCount = exports.getParticipantByIdOrUndefined = exports.getParticipantById = exports.getNormalizedDisplayName = exports.getVirtualScreenshareParticipantByOwnerId = exports.getLocalScreenShareParticipant = exports.getLocalParticipant = exports.getFirstLoadableAvatarUrl = exports.getActiveSpeakersToBeDisplayed = void 0;
 // @ts-expect-error
@@ -11,7 +14,7 @@ const functions_3 = require("../avatar/functions");
 const functions_4 = require("../conference/functions");
 const constants_2 = require("../flags/constants");
 const functions_5 = require("../flags/functions");
-const i18next_1 = require("../i18n/i18next");
+const i18next_1 = __importDefault(require("../i18n/i18next"));
 const constants_3 = require("../media/constants");
 const functions_6 = require("../redux/functions");
 const functions_any_1 = require("../tracks/functions.any");

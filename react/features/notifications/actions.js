@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.showParticipantLeftNotification = exports.showParticipantJoinedNotification = exports.showMessageNotification = exports.showWarningNotification = exports.showNotification = exports.showSuccessNotification = exports.showErrorNotification = exports.setNotificationsEnabled = exports.hideNotification = exports.clearNotifications = void 0;
-const throttle_1 = require("lodash/throttle");
+const throttle_1 = __importDefault(require("lodash/throttle"));
 const constants_1 = require("../base/flags/constants");
 const functions_1 = require("../base/flags/functions");
 const functions_2 = require("../base/participants/functions");

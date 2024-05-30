@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._getRouteToRender = void 0;
 // @ts-expect-error
@@ -9,11 +12,11 @@ const environment_1 = require("../base/environment/environment");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_2 = require("../base/redux/functions");
 const uri_1 = require("../base/util/uri");
-const Conference_1 = require("../conference/components/web/Conference");
+const Conference_1 = __importDefault(require("../conference/components/web/Conference"));
 const functions_3 = require("../deep-linking/functions");
-const UnsupportedDesktopBrowser_1 = require("../unsupported-browser/components/UnsupportedDesktopBrowser");
-const BlankPage_web_1 = require("../welcome/components/BlankPage.web");
-const WelcomePage_web_1 = require("../welcome/components/WelcomePage.web");
+const UnsupportedDesktopBrowser_1 = __importDefault(require("../unsupported-browser/components/UnsupportedDesktopBrowser"));
+const BlankPage_web_1 = __importDefault(require("../welcome/components/BlankPage.web"));
+const WelcomePage_web_1 = __importDefault(require("../welcome/components/WelcomePage.web"));
 const functions_4 = require("../welcome/functions");
 /**
  * Determines which route is to be rendered in order to depict a specific Redux

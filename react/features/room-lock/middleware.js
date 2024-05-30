@@ -1,15 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/conference/actionTypes");
 const actions_1 = require("../base/dialog/actions");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actions_2 = require("../notifications/actions");
 const constants_1 = require("../notifications/constants");
 const actions_3 = require("./actions");
-const PasswordRequiredPrompt_1 = require("./components/PasswordRequiredPrompt");
+const PasswordRequiredPrompt_1 = __importDefault(require("./components/PasswordRequiredPrompt"));
 const constants_2 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Middleware that captures conference failed and checks for password required
  * error and requests a dialog for user to enter password.

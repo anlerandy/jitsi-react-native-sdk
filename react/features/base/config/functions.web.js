@@ -13,9 +13,12 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._setDeeplinkingDefaults = exports.areAudioLevelsEnabled = exports.getWebHIDFeatureConfig = exports.getReplaceParticipant = exports._cleanupConfig = void 0;
-const lib_jitsi_meet_1 = require("../../base/lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importDefault(require("../../base/lib-jitsi-meet"));
 __exportStar(require("./functions.any"), exports);
 /**
  * Removes all analytics related options from the given configuration, in case of a libre build.

@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateLocalRecordingStatus = exports.overwriteParticipantsNames = exports.overwriteParticipantName = exports.localParticipantAudioLevelChanged = exports.raiseHandUpdateQueue = exports.raiseHandClear = exports.raiseHand = exports.setLoadableAvatarUrl = exports.pinParticipant = exports.participantKicked = exports.createVirtualScreenshareParticipant = exports.participantMutedUs = exports.participantUpdated = exports.screenshareParticipantDisplayNameChanged = exports.participantRoleChanged = exports.participantPresenceChanged = exports.participantLeft = exports.hiddenParticipantLeft = exports.hiddenParticipantJoined = exports.updateRemoteParticipantFeatures = exports.participantSourcesUpdated = exports.participantJoined = exports.muteRemoteParticipant = exports.localParticipantRoleChanged = exports.localParticipantLeft = exports.localParticipantJoined = exports.localParticipantIdChanged = exports.kickParticipant = exports.grantModerator = exports.dominantSpeakerChanged = void 0;
 const actions_1 = require("../../notifications/actions");
@@ -7,7 +10,7 @@ const functions_1 = require("../redux/functions");
 const actionTypes_1 = require("./actionTypes");
 const constants_2 = require("./constants");
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const types_1 = require("./types");
 /**
  * Create an action for when dominant speaker changes.

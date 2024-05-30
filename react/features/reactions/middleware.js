@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../analytics/AnalyticsEvents");
@@ -7,7 +10,7 @@ const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
 const actions_1 = require("../base/conference/actions");
 const functions_2 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actionTypes_3 = require("../base/settings/actionTypes");
 const actions_2 = require("../base/settings/actions");
 const actions_3 = require("../base/sounds/actions");
@@ -18,7 +21,7 @@ const actionTypes_4 = require("./actionTypes");
 const actions_5 = require("./actions");
 const constants_2 = require("./constants");
 const functions_any_2 = require("./functions.any");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const sounds_1 = require("./sounds");
 /**
  * Middleware which intercepts Reactions actions to handle changes to the

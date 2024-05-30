@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.googleCalendarApi = void 0;
 const actions_1 = require("../../google-api/actions"); // @ts-ignore
-const googleApi_web_1 = require("../../google-api/googleApi.web");
+const googleApi_web_1 = __importDefault(require("../../google-api/googleApi.web"));
 /**
  * A stateless collection of action creators that implements the expected
  * interface for interacting with the Google API in order to get calendar data.

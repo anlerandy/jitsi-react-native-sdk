@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const react_redux_1 = require("react-redux");
 const actions_1 = require("../../av-moderation/actions");
 const actionTypes_1 = require("../../breakout-rooms/actionTypes");
@@ -20,14 +23,14 @@ const actionTypes_4 = require("../config/actionTypes");
 const functions_any_1 = require("../config/functions.any");
 const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
 const constants_6 = require("../media/constants");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../redux/StateListenerRegistry"));
 const actions_4 = require("../sounds/actions");
 const actionTypes_5 = require("./actionTypes");
 const actions_5 = require("./actions");
 const constants_7 = require("./constants");
 const functions_4 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const sounds_1 = require("./sounds");
 require("./subscriber");
 /**

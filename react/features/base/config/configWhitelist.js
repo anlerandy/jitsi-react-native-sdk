@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const extraConfigWhitelist_1 = require("./extraConfigWhitelist");
+const extraConfigWhitelist_1 = __importDefault(require("./extraConfigWhitelist"));
 /**
  * The config keys to whitelist, the keys that can be overridden.
  * Whitelisting a key allows all properties under that key to be overridden.

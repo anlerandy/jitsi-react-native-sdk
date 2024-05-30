@@ -1,37 +1,63 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const clsx_1 = require("clsx");
-const debounce_1 = require("lodash/debounce");
-const react_1 = require("react");
+const clsx_1 = __importDefault(require("clsx"));
+const debounce_1 = __importDefault(require("lodash/debounce"));
+const react_1 = __importStar(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");
-const Avatar_1 = require("../../../base/avatar/components/Avatar");
+const Avatar_1 = __importDefault(require("../../../base/avatar/components/Avatar"));
 const utils_1 = require("../../../base/environment/utils");
 const functions_2 = require("../../../base/i18n/functions");
 const lib_jitsi_meet_1 = require("../../../base/lib-jitsi-meet");
-const VideoTrack_1 = require("../../../base/media/components/web/VideoTrack");
+const VideoTrack_1 = __importDefault(require("../../../base/media/components/web/VideoTrack"));
 const constants_1 = require("../../../base/media/constants");
 const actions_1 = require("../../../base/participants/actions");
 const functions_3 = require("../../../base/participants/functions");
 const constants_2 = require("../../../base/responsive-ui/constants");
-const Tooltip_1 = require("../../../base/tooltip/components/Tooltip");
+const Tooltip_1 = __importDefault(require("../../../base/tooltip/components/Tooltip"));
 const actions_2 = require("../../../base/tracks/actions");
 const functions_4 = require("../../../base/tracks/functions");
 const functions_5 = require("../../../face-landmarks/functions");
 const actions_3 = require("../../../gifs/actions");
 const functions_6 = require("../../../gifs/functions");
-const PresenceLabel_1 = require("../../../presence-status/components/PresenceLabel");
+const PresenceLabel_1 = __importDefault(require("../../../presence-status/components/PresenceLabel"));
 const constants_3 = require("../../../video-layout/constants");
 const functions_web_1 = require("../../../video-layout/functions.web");
 const actions_4 = require("../../actions");
 const constants_4 = require("../../constants");
 const functions_7 = require("../../functions");
-const ThumbnailAudioIndicator_1 = require("./ThumbnailAudioIndicator");
-const ThumbnailBottomIndicators_1 = require("./ThumbnailBottomIndicators");
-const ThumbnailTopIndicators_1 = require("./ThumbnailTopIndicators");
-const VirtualScreenshareParticipant_1 = require("./VirtualScreenshareParticipant");
+const ThumbnailAudioIndicator_1 = __importDefault(require("./ThumbnailAudioIndicator"));
+const ThumbnailBottomIndicators_1 = __importDefault(require("./ThumbnailBottomIndicators"));
+const ThumbnailTopIndicators_1 = __importDefault(require("./ThumbnailTopIndicators"));
+const VirtualScreenshareParticipant_1 = __importDefault(require("./VirtualScreenshareParticipant"));
 const defaultStyles = (theme) => {
     return {
         indicatorsContainer: {

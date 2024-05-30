@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const react_redux_1 = require("react-redux");
 // @ts-expect-error
 const constants_1 = require("../../../modules/API/constants");
@@ -13,16 +16,16 @@ const actions_2 = require("../base/dialog/actions");
 const functions_2 = require("../base/dialog/functions");
 const dateUtil_1 = require("../base/i18n/dateUtil");
 const functions_3 = require("../base/i18n/functions");
-const i18next_2 = require("../base/i18n/i18next");
+const i18next_2 = __importDefault(require("../base/i18n/i18next"));
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const actions_3 = require("../base/participants/actions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actionTypes_2 = require("../base/responsive-ui/actionTypes");
 const constants_any_1 = require("../base/ui/constants.any");
 const iframeUtils_1 = require("../base/util/iframeUtils");
 const functions_4 = require("../calendar-sync/functions");
-const FeedbackDialog_1 = require("../feedback/components/FeedbackDialog");
+const FeedbackDialog_1 = __importDefault(require("../feedback/components/FeedbackDialog"));
 const actions_any_2 = require("../filmstrip/actions.any");
 const functions_5 = require("../jaas/functions");
 const actions_4 = require("../notifications/actions");

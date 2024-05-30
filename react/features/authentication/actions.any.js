@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setTokenAuthUrlSuccess = exports.openLoginDialog = exports.waitForOwner = exports.stopWaitForOwner = exports.openWaitForOwnerDialog = exports.logout = exports.login = exports.hideLoginDialog = exports.authenticateAndUpgradeRole = void 0;
 const actions_1 = require("../base/conference/actions");
 const actions_2 = require("../base/dialog/actions");
 const actionTypes_1 = require("./actionTypes");
 const components_1 = require("./components");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Initiates authenticating and upgrading the role of the local participant to
  * moderator which will allow to create and join a new conference on an XMPP

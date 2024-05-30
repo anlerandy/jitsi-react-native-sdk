@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.submitVirtualBackgroundTab = exports.submitShortcutsTab = exports.toggleVideoSettings = exports.toggleAudioSettings = exports.submitNotificationsTab = exports.submitProfileTab = exports.submitModeratorTab = exports.submitMoreTab = exports.openSettingsDialog = exports.openLogoutDialog = void 0;
 const react_redux_1 = require("react-redux");
@@ -7,7 +10,7 @@ const functions_1 = require("../authentication/functions");
 const actions_1 = require("../base/conference/actions");
 const actions_web_2 = require("../base/connection/actions.web");
 const actions_2 = require("../base/dialog/actions");
-const i18next_1 = require("../base/i18n/i18next");
+const i18next_1 = __importDefault(require("../base/i18n/i18next"));
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_2 = require("../base/participants/functions");
 const actions_3 = require("../base/settings/actions");
@@ -15,10 +18,10 @@ const functions_web_1 = require("../base/tracks/functions.web");
 const uri_1 = require("../base/util/uri");
 const actions_web_3 = require("../keyboard-shortcuts/actions.web");
 const actions_4 = require("../virtual-background/actions");
-const logger_1 = require("../virtual-background/logger");
+const logger_1 = __importDefault(require("../virtual-background/logger"));
 const actionTypes_1 = require("./actionTypes");
-const LogoutDialog_1 = require("./components/web/LogoutDialog");
-const SettingsDialog_1 = require("./components/web/SettingsDialog");
+const LogoutDialog_1 = __importDefault(require("./components/web/LogoutDialog"));
+const SettingsDialog_1 = __importDefault(require("./components/web/SettingsDialog"));
 const functions_web_2 = require("./functions.web");
 /**
  * Opens {@code LogoutDialog}.

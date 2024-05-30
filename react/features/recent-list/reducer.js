@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MAX_LIST_SIZE = void 0;
 const utils_1 = require("../base/connection/utils");
-const PersistenceRegistry_1 = require("../base/redux/PersistenceRegistry");
-const ReducerRegistry_1 = require("../base/redux/ReducerRegistry");
+const PersistenceRegistry_1 = __importDefault(require("../base/redux/PersistenceRegistry"));
+const ReducerRegistry_1 = __importDefault(require("../base/redux/ReducerRegistry"));
 const actionTypes_1 = require("./actionTypes");
 const functions_1 = require("./functions");
 /**

@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
@@ -6,8 +9,8 @@ const functions_1 = require("../../../analytics/functions");
 const actions_1 = require("../../../base/dialog/actions");
 const functions_2 = require("../../../base/i18n/functions");
 const svg_1 = require("../../../base/icons/svg");
-const AbstractButton_1 = require("../../../base/toolbox/components/AbstractButton");
-const SalesforceLinkDialog_1 = require("../../../salesforce/components/web/SalesforceLinkDialog");
+const AbstractButton_1 = __importDefault(require("../../../base/toolbox/components/AbstractButton"));
+const SalesforceLinkDialog_1 = __importDefault(require("../../../salesforce/components/web/SalesforceLinkDialog"));
 const functions_3 = require("../../../salesforce/functions");
 /**
  * Implementation of a button for opening the Salesforce link dialog.

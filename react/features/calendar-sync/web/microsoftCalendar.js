@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.microsoftCalendarApi = void 0;
 const microsoft_graph_client_1 = require("@microsoft/microsoft-graph-client");
 // eslint-disable-next-line lines-around-comment
-const base64_js_1 = require("base64-js");
+const base64_js_1 = __importDefault(require("base64-js"));
 const uuid_1 = require("uuid");
 const windows_iana_1 = require("windows-iana");
 // @ts-expect-error

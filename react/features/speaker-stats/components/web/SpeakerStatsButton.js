@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
@@ -6,8 +9,8 @@ const functions_1 = require("../../../analytics/functions");
 const actions_1 = require("../../../base/dialog/actions");
 const functions_2 = require("../../../base/i18n/functions");
 const functions_3 = require("../../functions");
-const AbstractSpeakerStatsButton_1 = require("../AbstractSpeakerStatsButton");
-const SpeakerStats_1 = require("./SpeakerStats");
+const AbstractSpeakerStatsButton_1 = __importDefault(require("../AbstractSpeakerStatsButton"));
+const SpeakerStats_1 = __importDefault(require("./SpeakerStats"));
 /**
  * Implementation of a button for opening speaker stats dialog.
  */

@@ -13,10 +13,13 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toggleLanguageSelectorDialog = void 0;
 const actions_1 = require("../base/dialog/actions");
-const LanguageSelectorDialog_1 = require("./components/web/LanguageSelectorDialog");
+const LanguageSelectorDialog_1 = __importDefault(require("./components/web/LanguageSelectorDialog"));
 __exportStar(require("./actions.any"), exports);
 /**
  * Signals that the local user has toggled the LanguageSelector button.

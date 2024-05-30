@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const constants_1 = require("../media/constants");
 const functions_1 = require("../participants/functions");
-const StateListenerRegistry_1 = require("../redux/StateListenerRegistry");
+const StateListenerRegistry_1 = __importDefault(require("../redux/StateListenerRegistry"));
 const functions_2 = require("./functions");
 /**
  * Notifies when the list of currently sharing participants changes.

@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const AnalyticsEvents_1 = require("../analytics/AnalyticsEvents");
 const functions_1 = require("../analytics/functions");
@@ -6,7 +9,7 @@ const actions_1 = require("../base/app/actions");
 const actionTypes_1 = require("../base/conference/actionTypes");
 const actionTypes_2 = require("../base/connection/actionTypes");
 const utils_1 = require("../base/connection/utils");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const iframeUtils_1 = require("../base/util/iframeUtils");
 const actions_2 = require("./actions");
 const getRouteToRender_1 = require("./getRouteToRender");

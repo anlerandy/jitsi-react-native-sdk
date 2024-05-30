@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
@@ -8,15 +11,15 @@ const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const actionTypes_3 = require("../base/participants/actionTypes");
 const actions_2 = require("../base/participants/actions");
 const functions_2 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actions_3 = require("../base/sounds/actions");
 const actionTypes_4 = require("./actionTypes");
 const actions_4 = require("./actions");
-const ParticipantVerificationDialog_1 = require("./components/ParticipantVerificationDialog");
+const ParticipantVerificationDialog_1 = __importDefault(require("./components/ParticipantVerificationDialog"));
 const constants_1 = require("./constants");
 const functions_3 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Middleware that captures actions related to E2EE.
  *

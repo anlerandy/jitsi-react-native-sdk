@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const pixelmatch_1 = require("pixelmatch");
+const pixelmatch_1 = __importDefault(require("pixelmatch"));
 const constants_1 = require("./constants");
 let timer;
 const canvas = new OffscreenCanvas(0, 0);

@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
-const MiddlewareRegistry_1 = require("./MiddlewareRegistry");
-const PersistenceRegistry_1 = require("./PersistenceRegistry");
+const lodash_1 = __importDefault(require("lodash"));
+const MiddlewareRegistry_1 = __importDefault(require("./MiddlewareRegistry"));
+const PersistenceRegistry_1 = __importDefault(require("./PersistenceRegistry"));
 const functions_1 = require("./functions");
 /**
  * The delay in milliseconds that passes between the last state change and the

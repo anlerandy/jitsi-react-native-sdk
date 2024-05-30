@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const functions_1 = require("../../../base/i18n/functions");
-const Dialog_1 = require("../../../base/ui/components/web/Dialog");
-const AbstractKickRemoteParticipantDialog_1 = require("../AbstractKickRemoteParticipantDialog");
+const Dialog_1 = __importDefault(require("../../../base/ui/components/web/Dialog"));
+const AbstractKickRemoteParticipantDialog_1 = __importDefault(require("../AbstractKickRemoteParticipantDialog"));
 /**
  * Dialog to confirm a remote participant kick action.
  */

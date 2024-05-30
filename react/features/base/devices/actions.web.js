@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.devicePermissionsChanged = exports.checkAndNotifyForNewDevice = exports.updateDeviceList = exports.setVideoInputDeviceAndUpdateSettings = exports.setVideoInputDevice = exports.setAudioOutputDevice = exports.setAudioInputDeviceAndUpdateSettings = exports.setAudioInputDevice = exports.removePendingDeviceRequests = exports.notifyMicError = exports.notifyCameraError = exports.getAvailableDevices = exports.configureInitialDevices = exports.addPendingDeviceRequest = void 0;
-const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importDefault(require("../lib-jitsi-meet"));
 const actions_1 = require("../settings/actions");
 const functions_web_1 = require("../settings/functions.web");
 const actionTypes_1 = require("./actionTypes");
 const functions_1 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Maps the WebRTC string for device type to the keys used to store configure,
  * within redux, which devices should be used by default.

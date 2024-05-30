@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const clsx_1 = require("clsx");
-const react_1 = require("react");
+const clsx_1 = __importDefault(require("clsx"));
+const react_1 = __importDefault(require("react"));
 const mui_1 = require("tss-react/mui");
-const Avatar_1 = require("../../../base/avatar/components/Avatar");
-const ChatMessage_1 = require("./ChatMessage");
+const Avatar_1 = __importDefault(require("../../../base/avatar/components/Avatar"));
+const ChatMessage_1 = __importDefault(require("./ChatMessage"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         messageGroup: {

@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 require("./middleware.any");
 const actions_1 = require("../../notifications/actions");
 const constants_1 = require("../../notifications/constants");
-const LocalRecordingManager_web_1 = require("../../recording/components/Recording/LocalRecordingManager.web");
-const StopRecordingDialog_1 = require("../../recording/components/Recording/web/StopRecordingDialog");
+const LocalRecordingManager_web_1 = __importDefault(require("../../recording/components/Recording/LocalRecordingManager.web"));
+const StopRecordingDialog_1 = __importDefault(require("../../recording/components/Recording/web/StopRecordingDialog"));
 const actions_2 = require("../dialog/actions");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const actionTypes_1 = require("./actionTypes");
 require("./subscriber");
 /**

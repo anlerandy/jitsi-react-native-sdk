@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.saveLogs = void 0;
-const getRoomName_1 = require("../base/config/getRoomName");
+const getRoomName_1 = __importDefault(require("../base/config/getRoomName"));
 const downloadJSON_1 = require("../base/util/downloadJSON");
 /**
  * Create an action for saving the conference logs.

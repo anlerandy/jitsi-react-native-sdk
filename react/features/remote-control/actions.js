@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pause = exports.resume = exports.keyPressed = exports.mouseScrolled = exports.mouseMoved = exports.mouseClicked = exports.grant = exports.sendStartRequest = exports.deny = exports.endpointMessageReceived = exports.stopReceiver = exports.disableReceiver = exports.enableReceiver = exports.setReceiverTransport = exports.clearRequest = exports.stopController = exports.handleRemoteControlStoppedEvent = exports.processPermissionRequestReply = exports.requestRemoteControl = exports.setRemoteControlActive = exports.openRemoteControlAuthorizationDialog = void 0;
 // @ts-expect-error
-const jquery_1 = require("jquery");
+const jquery_1 = __importDefault(require("jquery"));
 const actions_1 = require("../base/dialog/actions");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const actions_2 = require("../base/participants/actions");
@@ -13,10 +16,10 @@ const actions_4 = require("../notifications/actions");
 const constants_1 = require("../notifications/constants");
 const functions_3 = require("../screen-share/functions");
 const actionTypes_1 = require("./actionTypes");
-const RemoteControlAuthorizationDialog_1 = require("./components/RemoteControlAuthorizationDialog");
+const RemoteControlAuthorizationDialog_1 = __importDefault(require("./components/RemoteControlAuthorizationDialog"));
 const constants_2 = require("./constants");
 const functions_4 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Listeners.
  */

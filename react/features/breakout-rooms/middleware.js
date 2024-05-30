@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_1 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actions_any_1 = require("../chat/actions.any");
 const constants_1 = require("../chat/constants");
 const actionTypes_1 = require("./actionTypes");
 const actions_1 = require("./actions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Registers a change handler for state['features/base/conference'].conference to
  * set the event listeners needed for the breakout rooms feature to operate.

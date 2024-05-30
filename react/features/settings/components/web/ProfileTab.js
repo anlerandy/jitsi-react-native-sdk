@@ -1,17 +1,20 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");
 const actions_web_1 = require("../../../authentication/actions.web");
-const Avatar_1 = require("../../../base/avatar/components/Avatar");
-const AbstractDialogTab_1 = require("../../../base/dialog/components/web/AbstractDialogTab");
+const Avatar_1 = __importDefault(require("../../../base/avatar/components/Avatar"));
+const AbstractDialogTab_1 = __importDefault(require("../../../base/dialog/components/web/AbstractDialogTab"));
 const functions_2 = require("../../../base/i18n/functions");
 const functions_web_1 = require("../../../base/styles/functions.web");
-const Button_1 = require("../../../base/ui/components/web/Button");
-const Input_1 = require("../../../base/ui/components/web/Input");
+const Button_1 = __importDefault(require("../../../base/ui/components/web/Button"));
+const Input_1 = __importDefault(require("../../../base/ui/components/web/Input"));
 const styles = (theme) => {
     return {
         container: {

@@ -1,4 +1,30 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const functions_1 = require("../../device-selection/functions");
 const actions_1 = require("../../notifications/actions");
@@ -7,15 +33,15 @@ const actions_2 = require("../../prejoin/actions");
 const functions_2 = require("../../prejoin/functions");
 const actionTypes_1 = require("../app/actionTypes");
 const utils_1 = require("../environment/utils");
-const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importStar(require("../lib-jitsi-meet"));
 const constants_2 = require("../media/constants");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const actions_3 = require("../settings/actions");
 const functions_3 = require("../tracks/functions");
 const actionTypes_2 = require("./actionTypes");
 const actions_4 = require("./actions");
 const functions_4 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const JITSI_TRACK_ERROR_TO_MESSAGE_KEY_MAP = {
     microphone: {
         [lib_jitsi_meet_1.JitsiTrackErrors.CONSTRAINT_FAILED]: 'dialog.micConstraintFailedError',

@@ -1,16 +1,19 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const debounce_1 = require("lodash/debounce");
+const debounce_1 = __importDefault(require("lodash/debounce"));
 const actionTypes_1 = require("../../filmstrip/actionTypes");
 const actionTypes_2 = require("../../mobile/background/actionTypes");
 const actionTypes_3 = require("../../video-layout/actionTypes");
 const actionTypes_4 = require("../audio-only/actionTypes");
 const actionTypes_5 = require("../conference/actionTypes");
 const functions_1 = require("../participants/functions");
-const MiddlewareRegistry_1 = require("../redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../redux/MiddlewareRegistry"));
 const functions_2 = require("../tracks/functions");
 const actions_1 = require("./actions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Updates the last N value in the conference based on the current state of the redux store.
  *

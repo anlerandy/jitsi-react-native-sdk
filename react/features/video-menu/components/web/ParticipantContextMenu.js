@@ -1,18 +1,44 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importStar(require("react"));
 const react_i18next_1 = require("react-i18next");
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const functions_1 = require("../../../av-moderation/functions");
-const Avatar_1 = require("../../../base/avatar/components/Avatar");
+const Avatar_1 = __importDefault(require("../../../base/avatar/components/Avatar"));
 const utils_1 = require("../../../base/environment/utils");
 const constants_1 = require("../../../base/media/constants");
 const constants_2 = require("../../../base/participants/constants");
 const functions_2 = require("../../../base/participants/functions");
 const functions_any_1 = require("../../../base/tracks/functions.any");
-const ContextMenu_1 = require("../../../base/ui/components/web/ContextMenu");
-const ContextMenuItemGroup_1 = require("../../../base/ui/components/web/ContextMenuItemGroup");
+const ContextMenu_1 = __importDefault(require("../../../base/ui/components/web/ContextMenu"));
+const ContextMenuItemGroup_1 = __importDefault(require("../../../base/ui/components/web/ContextMenuItemGroup"));
 const functions_3 = require("../../../breakout-rooms/functions");
 const functions_4 = require("../../../e2ee/functions");
 const actions_web_1 = require("../../../filmstrip/actions.web");
@@ -24,22 +50,22 @@ const functions_web_2 = require("../../../toolbox/functions.web");
 const types_1 = require("../../../toolbox/types");
 const functions_6 = require("../../../visitors/functions");
 const constants_4 = require("../../constants");
-const AskToUnmuteButton_1 = require("./AskToUnmuteButton");
-const ConnectionStatusButton_1 = require("./ConnectionStatusButton");
-const CustomOptionButton_1 = require("./CustomOptionButton");
-const DemoteToVisitorButton_1 = require("./DemoteToVisitorButton");
-const GrantModeratorButton_1 = require("./GrantModeratorButton");
-const KickButton_1 = require("./KickButton");
-const MuteButton_1 = require("./MuteButton");
-const MuteEveryoneElseButton_1 = require("./MuteEveryoneElseButton");
-const MuteEveryoneElsesVideoButton_1 = require("./MuteEveryoneElsesVideoButton");
-const MuteVideoButton_1 = require("./MuteVideoButton");
-const PrivateMessageMenuButton_1 = require("./PrivateMessageMenuButton");
-const RemoteControlButton_1 = require("./RemoteControlButton");
-const SendToRoomButton_1 = require("./SendToRoomButton");
-const TogglePinToStageButton_1 = require("./TogglePinToStageButton");
-const VerifyParticipantButton_1 = require("./VerifyParticipantButton");
-const VolumeSlider_1 = require("./VolumeSlider");
+const AskToUnmuteButton_1 = __importDefault(require("./AskToUnmuteButton"));
+const ConnectionStatusButton_1 = __importDefault(require("./ConnectionStatusButton"));
+const CustomOptionButton_1 = __importDefault(require("./CustomOptionButton"));
+const DemoteToVisitorButton_1 = __importDefault(require("./DemoteToVisitorButton"));
+const GrantModeratorButton_1 = __importDefault(require("./GrantModeratorButton"));
+const KickButton_1 = __importDefault(require("./KickButton"));
+const MuteButton_1 = __importDefault(require("./MuteButton"));
+const MuteEveryoneElseButton_1 = __importDefault(require("./MuteEveryoneElseButton"));
+const MuteEveryoneElsesVideoButton_1 = __importDefault(require("./MuteEveryoneElsesVideoButton"));
+const MuteVideoButton_1 = __importDefault(require("./MuteVideoButton"));
+const PrivateMessageMenuButton_1 = __importDefault(require("./PrivateMessageMenuButton"));
+const RemoteControlButton_1 = __importStar(require("./RemoteControlButton"));
+const SendToRoomButton_1 = __importDefault(require("./SendToRoomButton"));
+const TogglePinToStageButton_1 = __importDefault(require("./TogglePinToStageButton"));
+const VerifyParticipantButton_1 = __importDefault(require("./VerifyParticipantButton"));
+const VolumeSlider_1 = __importDefault(require("./VolumeSlider"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         text: {

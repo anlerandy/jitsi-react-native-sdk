@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = void 0;
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const functions_1 = require("../../base/i18n/functions");
 const svg_1 = require("../../base/icons/svg");
-const Label_1 = require("../../base/label/components/web/Label");
+const Label_1 = __importDefault(require("../../base/label/components/web/Label"));
 const constants_1 = require("../../base/label/constants");
-const Tooltip_1 = require("../../base/tooltip/components/Tooltip");
+const Tooltip_1 = __importDefault(require("../../base/tooltip/components/Tooltip"));
 const E2EELabel = ({ _e2eeLabels, _showLabel, t }) => {
     if (!_showLabel) {
         return null;

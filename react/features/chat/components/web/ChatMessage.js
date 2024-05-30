@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const functions_1 = require("../../../base/i18n/functions");
-const Message_1 = require("../../../base/react/components/web/Message");
+const Message_1 = __importDefault(require("../../../base/react/components/web/Message"));
 const functions_web_1 = require("../../../base/styles/functions.web");
 const functions_2 = require("../../functions");
-const PrivateMessageButton_1 = require("./PrivateMessageButton");
+const PrivateMessageButton_1 = __importDefault(require("./PrivateMessageButton"));
 const useStyles = (0, mui_1.makeStyles)()((theme) => {
     return {
         chatMessageWrapper: {

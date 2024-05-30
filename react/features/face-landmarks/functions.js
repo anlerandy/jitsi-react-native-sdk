@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getDetectionInterval = exports.getVideoObjectPosition = exports.sendFaceExpressionsWebhook = exports.sendFaceExpressionToServer = exports.sendFaceBoxToParticipants = exports.sendFaceExpressionToParticipants = void 0;
 const functions_1 = require("../base/participants/functions");
 const functions_any_1 = require("../dynamic-branding/functions.any");
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Sends the face landmarks to other participants via the data channel.
  *

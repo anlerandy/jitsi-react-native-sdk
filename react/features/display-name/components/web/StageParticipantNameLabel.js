@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const functions_any_1 = require("../../../base/config/functions.any");
@@ -9,7 +12,7 @@ const functions_web_1 = require("../../../base/styles/functions.web");
 const functions_2 = require("../../../large-video/functions");
 const functions_web_2 = require("../../../toolbox/functions.web");
 const functions_web_3 = require("../../../video-layout/functions.web");
-const DisplayNameBadge_1 = require("./DisplayNameBadge");
+const DisplayNameBadge_1 = __importDefault(require("./DisplayNameBadge"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         badgeContainer: {

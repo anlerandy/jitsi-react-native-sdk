@@ -13,9 +13,12 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getTokenAuthUrl = void 0;
-const base64_js_1 = require("base64-js");
+const base64_js_1 = __importDefault(require("base64-js"));
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_any_1 = require("./functions.any");
 __exportStar(require("./functions.any"), exports);

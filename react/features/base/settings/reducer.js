@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-expect-error
 const js_utils_1 = require("@jitsi/js-utils");
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const actionTypes_1 = require("../app/actionTypes");
-const PersistenceRegistry_1 = require("../redux/PersistenceRegistry");
-const ReducerRegistry_1 = require("../redux/ReducerRegistry");
+const PersistenceRegistry_1 = __importDefault(require("../redux/PersistenceRegistry"));
+const ReducerRegistry_1 = __importDefault(require("../redux/ReducerRegistry"));
 const helpers_1 = require("../util/helpers");
 const actionTypes_2 = require("./actionTypes");
 /**

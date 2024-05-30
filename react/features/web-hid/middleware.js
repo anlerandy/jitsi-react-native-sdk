@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const actionTypes_1 = require("../base/app/actionTypes");
 const functions_web_1 = require("../base/config/functions.web");
 const actionTypes_2 = require("../base/media/actionTypes");
 const functions_1 = require("../base/media/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const actionTypes_3 = require("./actionTypes");
 const actions_1 = require("./actions");
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const types_1 = require("./types");
 /**
  * A listener for initialising the webhid device.

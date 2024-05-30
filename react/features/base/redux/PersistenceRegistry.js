@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-ignore
 const js_utils_1 = require("@jitsi/js-utils");
 // eslint-disable-next-line lines-around-comment
 // @ts-ignore
 const json_1 = require("@jitsi/js-utils/json");
-const js_md5_1 = require("js-md5");
-const logger_1 = require("./logger");
+const js_md5_1 = __importDefault(require("js-md5"));
+const logger_1 = __importDefault(require("./logger"));
 /**
  * A registry to allow features to register their redux store subtree to be
  * persisted and also handles the persistency calls too.

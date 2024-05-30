@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
-const VideoTrack_1 = require("../../../base/media/components/web/VideoTrack");
+const VideoTrack_1 = __importDefault(require("../../../base/media/components/web/VideoTrack"));
 const constants_1 = require("../../../video-layout/constants");
 const functions_web_1 = require("../../../video-layout/functions.web");
-const ThumbnailBottomIndicators_1 = require("./ThumbnailBottomIndicators");
-const ThumbnailTopIndicators_1 = require("./ThumbnailTopIndicators");
+const ThumbnailBottomIndicators_1 = __importDefault(require("./ThumbnailBottomIndicators"));
+const ThumbnailTopIndicators_1 = __importDefault(require("./ThumbnailTopIndicators"));
 const VirtualScreenshareParticipant = ({ classes, containerClassName, isHovered, isLocal, isMobile, onClick, onMouseEnter, onMouseLeave, onMouseMove, onTouchEnd, onTouchMove, onTouchStart, participantId, shouldDisplayTintBackground, styles, videoTrack, thumbnailType }) => {
     const currentLayout = (0, react_redux_1.useSelector)(functions_web_1.getCurrentLayout);
     const videoTrackId = videoTrack?.jitsiTrack?.getId();

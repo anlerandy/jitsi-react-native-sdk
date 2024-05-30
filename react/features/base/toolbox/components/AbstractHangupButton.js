@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const svg_1 = require("../../icons/svg");
-const AbstractButton_1 = require("./AbstractButton");
+const AbstractButton_1 = __importDefault(require("./AbstractButton"));
 /**
  * An abstract implementation of a button for disconnecting a conference.
  */

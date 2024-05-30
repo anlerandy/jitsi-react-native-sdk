@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
-const CopyButton_web_1 = require("../../base/buttons/CopyButton.web");
+const CopyButton_web_1 = __importDefault(require("../../base/buttons/CopyButton.web"));
 const functions_1 = require("../../base/connection/functions");
 const functions_2 = require("../../base/i18n/functions");
-const Dialog_1 = require("../../base/ui/components/web/Dialog");
-const Input_1 = require("../../base/ui/components/web/Input");
+const Dialog_1 = __importDefault(require("../../base/ui/components/web/Dialog"));
+const Input_1 = __importDefault(require("../../base/ui/components/web/Input"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         container: {

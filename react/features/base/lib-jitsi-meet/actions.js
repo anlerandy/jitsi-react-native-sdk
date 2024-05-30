@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.libInitError = exports.initLib = exports.disposeLib = void 0;
 // @ts-expect-error
 const js_utils_1 = require("@jitsi/js-utils");
 const selectors_1 = require("../net-info/selectors");
-const _1 = require("./_");
+const _1 = __importDefault(require("./_"));
 const actionTypes_1 = require("./actionTypes");
 const functions_any_1 = require("./functions.any");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Disposes (of) lib-jitsi-meet.
  *

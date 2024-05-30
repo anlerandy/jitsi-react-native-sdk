@@ -1,13 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const mui_1 = require("tss-react/mui");
 const functions_1 = require("../../../../base/i18n/functions");
-const Icon_1 = require("../../../../base/icons/components/Icon");
+const Icon_1 = __importDefault(require("../../../../base/icons/components/Icon"));
 const svg_1 = require("../../../../base/icons/svg");
-const Button_1 = require("../../../../base/ui/components/web/Button");
+const Button_1 = __importDefault(require("../../../../base/ui/components/web/Button"));
 const utils_1 = require("../../../utils");
-const Label_1 = require("../Label");
+const Label_1 = __importDefault(require("../Label"));
 const useStyles = (0, mui_1.makeStyles)()(theme => {
     return {
         dialInDialog: {

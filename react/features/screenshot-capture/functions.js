@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isScreenshotCaptureEnabled = exports.createScreenshotCaptureSummary = void 0;
 const functions_1 = require("../base/redux/functions");
 const functions_2 = require("../recording/functions");
 const functions_3 = require("../screen-share/functions");
-const ScreenshotCaptureSummary_1 = require("./ScreenshotCaptureSummary");
+const ScreenshotCaptureSummary_1 = __importDefault(require("./ScreenshotCaptureSummary"));
 /**
  * Creates a new instance of ScreenshotCapture.
  *

@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._VIDEO_INITIAL_MEDIA_STATE = exports._SCREENSHARE_INITIAL_MEDIA_STATE = exports._AUDIO_INITIAL_MEDIA_STATE = void 0;
 const redux_1 = require("redux");
 const actionTypes_1 = require("../conference/actionTypes");
-const ReducerRegistry_1 = require("../redux/ReducerRegistry");
+const ReducerRegistry_1 = __importDefault(require("../redux/ReducerRegistry"));
 const actionTypes_2 = require("../tracks/actionTypes");
 const actionTypes_3 = require("./actionTypes");
 const constants_1 = require("./constants");

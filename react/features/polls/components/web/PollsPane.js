@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const mui_1 = require("tss-react/mui");
-const Button_1 = require("../../../base/ui/components/web/Button");
-const AbstractPollsPane_1 = require("../AbstractPollsPane");
-const PollCreate_1 = require("./PollCreate");
-const PollsList_1 = require("./PollsList");
+const Button_1 = __importDefault(require("../../../base/ui/components/web/Button"));
+const AbstractPollsPane_1 = __importDefault(require("../AbstractPollsPane"));
+const PollCreate_1 = __importDefault(require("./PollCreate"));
+const PollsList_1 = __importDefault(require("./PollsList"));
 /* eslint-enable lines-around-comment */
 const useStyles = (0, mui_1.makeStyles)()(() => {
     return {

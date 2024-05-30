@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const constants_1 = require("../../../video-layout/constants");
 const functions_web_1 = require("../../../video-layout/functions.web");
 const constants_2 = require("../../constants");
 const functions_web_2 = require("../../functions.web");
-const Filmstrip_1 = require("./Filmstrip");
+const Filmstrip_1 = __importDefault(require("./Filmstrip"));
 // eslint-disable-next-line no-confusing-arrow
 const ScreenshareFilmstrip = (props) => props._currentLayout === constants_1.LAYOUTS.STAGE_FILMSTRIP_VIEW
     && props._remoteParticipants.length === 1 ? (react_1.default.createElement("span", { className: constants_1.LAYOUT_CLASSNAMES[constants_1.LAYOUTS.TILE_VIEW] },

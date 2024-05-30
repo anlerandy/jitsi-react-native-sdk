@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setDynamicBrandingFailed = exports.setDynamicBrandingReady = exports.setDynamicBrandingData = exports.fetchCustomBrandingData = void 0;
 const httpUtils_1 = require("../base/util/httpUtils");
 const actionTypes_1 = require("./actionTypes");
 const functions_any_1 = require("./functions.any");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Fetches custom branding data.
  * If there is no data or the request fails, sets the `customizationReady` flag

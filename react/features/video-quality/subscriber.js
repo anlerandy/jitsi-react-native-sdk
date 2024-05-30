@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const debounce_1 = require("lodash/debounce");
+const debounce_1 = __importDefault(require("lodash/debounce"));
 const functions_1 = require("../base/conference/functions");
 const functions_any_1 = require("../base/config/functions.any");
 const constants_1 = require("../base/media/constants");
 const functions_2 = require("../base/participants/functions");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const functions_3 = require("../base/tracks/functions");
 const helpers_1 = require("../base/util/helpers");
 const functions_4 = require("../filmstrip/functions");
@@ -14,7 +17,7 @@ const functions_5 = require("../video-layout/functions");
 const actions_1 = require("./actions");
 const constants_3 = require("./constants");
 const functions_6 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const selector_1 = require("./selector");
 /**
  * Handles changes in the visible participants in the filmstrip. The listener is debounced

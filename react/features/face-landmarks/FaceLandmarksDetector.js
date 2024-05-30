@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 require("image-capture");
 require("./createImageBitmap");
@@ -8,7 +11,7 @@ const helpers_1 = require("../base/util/helpers");
 const actions_1 = require("./actions");
 const constants_1 = require("./constants");
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Class for face language detection.
  */

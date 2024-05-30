@@ -1,16 +1,19 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const mui_1 = require("tss-react/mui");
 const actions_web_1 = require("../../../../base/devices/actions.web");
 const functions_web_1 = require("../../../../base/devices/functions.web");
-const Popover_web_1 = require("../../../../base/popover/components/Popover.web");
+const Popover_web_1 = __importDefault(require("../../../../base/popover/components/Popover.web"));
 const constants_1 = require("../../../../base/responsive-ui/constants");
 const functions_web_2 = require("../../../../base/settings/functions.web");
 const actions_1 = require("../../../actions");
 const functions_web_3 = require("../../../functions.web");
-const VideoSettingsContent_1 = require("./VideoSettingsContent");
+const VideoSettingsContent_1 = __importDefault(require("./VideoSettingsContent"));
 const useStyles = (0, mui_1.makeStyles)()(() => {
     return {
         container: {

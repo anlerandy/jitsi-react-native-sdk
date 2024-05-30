@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getHideSelfView = exports.shouldHideShareAudioHelper = exports.getServerURL = exports.getPropertyValue = void 0;
 const functions_1 = require("../../visitors/functions");
-const configWhitelist_1 = require("../config/configWhitelist");
+const configWhitelist_1 = __importDefault(require("../config/configWhitelist"));
 const functions_2 = require("../redux/functions");
 const parseURLParams_1 = require("../util/parseURLParams");
 const constants_1 = require("./constants");

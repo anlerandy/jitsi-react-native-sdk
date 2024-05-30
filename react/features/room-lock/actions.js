@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.unlockRoom = exports._openPasswordRequiredPrompt = exports.endRoomLockRequest = exports._cancelPasswordRequiredPrompt = void 0;
 const actions_1 = require("../app/actions");
@@ -6,7 +9,7 @@ const actions_2 = require("../base/conference/actions");
 const constants_1 = require("../base/conference/constants");
 const actions_3 = require("../base/dialog/actions");
 const security_dialog_1 = require("../security/components/security-dialog");
-const PasswordRequiredPrompt_1 = require("./components/PasswordRequiredPrompt");
+const PasswordRequiredPrompt_1 = __importDefault(require("./components/PasswordRequiredPrompt"));
 /**
  * Cancels a prompt for a password to join a specific conference/room.
  *

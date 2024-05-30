@@ -1,14 +1,17 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const react_redux_1 = require("react-redux");
 const functions_1 = require("../../../base/i18n/functions");
 const svg_1 = require("../../../base/icons/svg");
-const AbstractButton_1 = require("../../../base/toolbox/components/AbstractButton");
+const AbstractButton_1 = __importDefault(require("../../../base/toolbox/components/AbstractButton"));
 const actions_web_1 = require("../../../participants-pane/actions.web");
 const actions_web_2 = require("../../../toolbox/actions.web");
 const functions_2 = require("../../functions");
-const ParticipantsCounter_1 = require("./ParticipantsCounter");
+const ParticipantsCounter_1 = __importDefault(require("./ParticipantsCounter"));
 /**
  * Implementation of a button for accessing participants pane.
  */

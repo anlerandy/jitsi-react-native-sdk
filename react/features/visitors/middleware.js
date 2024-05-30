@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const react_redux_1 = require("react-redux");
 const actionTypes_1 = require("../base/conference/actionTypes");
 const actions_1 = require("../base/connection/actions");
@@ -8,14 +11,14 @@ const actions_any_1 = require("../base/connection/actions.any");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const actions_2 = require("../base/participants/actions");
 const functions_1 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const constants_any_1 = require("../base/ui/constants.any");
 const actions_3 = require("../notifications/actions");
 const constants_1 = require("../notifications/constants");
 const actions_4 = require("../participants-pane/actions");
 const actions_5 = require("./actions");
 const functions_2 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 MiddlewareRegistry_1.default.register(({ dispatch, getState }) => next => action => {
     switch (action.type) {
         case actionTypes_1.CONFERENCE_JOIN_IN_PROGRESS: {

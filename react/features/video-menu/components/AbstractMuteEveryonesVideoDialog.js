@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.abstractMapStateToProps = void 0;
 const actions_1 = require("../../av-moderation/actions");
@@ -6,7 +9,7 @@ const functions_1 = require("../../av-moderation/functions");
 const constants_1 = require("../../base/media/constants");
 const functions_2 = require("../../base/participants/functions");
 const actions_2 = require("../actions");
-const AbstractMuteRemoteParticipantsVideoDialog_1 = require("./AbstractMuteRemoteParticipantsVideoDialog");
+const AbstractMuteRemoteParticipantsVideoDialog_1 = __importDefault(require("./AbstractMuteRemoteParticipantsVideoDialog"));
 /**
  *
  * An abstract Component with the contents for a dialog that asks for confirmation

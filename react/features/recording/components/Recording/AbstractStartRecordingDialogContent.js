@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mapStateToProps = void 0;
 const react_1 = require("react");
 const AnalyticsEvents_1 = require("../../../analytics/AnalyticsEvents");
 const functions_1 = require("../../../analytics/functions");
-const ColorSchemeRegistry_1 = require("../../../base/color-scheme/ColorSchemeRegistry");
+const ColorSchemeRegistry_1 = __importDefault(require("../../../base/color-scheme/ColorSchemeRegistry"));
 const functions_2 = require("../../../base/dialog/functions");
 const functions_3 = require("../../../base/participants/functions");
 const actions_1 = require("../../../dropbox/actions");

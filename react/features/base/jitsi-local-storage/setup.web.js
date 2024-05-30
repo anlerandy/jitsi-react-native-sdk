@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-ignore
 const jitsi_local_storage_1 = require("@jitsi/js-utils/jitsi-local-storage");
@@ -8,7 +11,7 @@ const json_1 = require("@jitsi/js-utils/json");
 const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
 const iframeUtils_1 = require("../util/iframeUtils");
 const parseURLParams_1 = require("../util/parseURLParams");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Handles changes of the fake local storage.
  *

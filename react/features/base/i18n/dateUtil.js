@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getLocalizedDurationFormatter = exports.getLocalizedDateFormatter = void 0;
-const moment_duration_format_1 = require("moment-duration-format");
-const i18next_1 = require("./i18next");
+const moment_duration_format_1 = __importDefault(require("moment-duration-format"));
+const i18next_1 = __importDefault(require("./i18next"));
 const moment = require('moment');
 // allows for moment durations to be formatted
 (0, moment_duration_format_1.default)(moment);

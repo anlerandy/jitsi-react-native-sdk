@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mapStateToProps = void 0;
 const constants_1 = require("../../base/flags/constants");
 const functions_1 = require("../../base/flags/functions");
 const constants_2 = require("../../base/media/constants");
-const BaseVideoMuteButton_1 = require("../../base/toolbox/components/BaseVideoMuteButton");
+const BaseVideoMuteButton_1 = __importDefault(require("../../base/toolbox/components/BaseVideoMuteButton"));
 const functions_2 = require("../../base/tracks/functions");
 const actions_any_1 = require("../actions.any");
 const functions_3 = require("../functions");

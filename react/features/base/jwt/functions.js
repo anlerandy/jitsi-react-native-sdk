@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getJwtExpirationDate = exports.validateJwt = exports.isJwtFeatureEnabled = exports.getJwtName = exports.parseJWTFromURLParams = void 0;
 // @ts-expect-error
-const jwt_decode_1 = require("jwt-decode");
+const jwt_decode_1 = __importDefault(require("jwt-decode"));
 const functions_1 = require("../participants/functions");
 const parseURLParams_1 = require("../util/parseURLParams");
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Retrieves the JSON Web Token (JWT), if any, defined by a specific
  * {@link URL}.

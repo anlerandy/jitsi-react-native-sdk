@@ -13,10 +13,13 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setSeeWhatIsBeingShared = exports.resizeLargeVideo = exports.captureLargeVideoScreenshot = void 0;
 // @ts-expect-error
-const VideoLayout_1 = require("../../../modules/UI/videolayout/VideoLayout");
+const VideoLayout_1 = __importDefault(require("../../../modules/UI/videolayout/VideoLayout"));
 const functions_1 = require("../base/participants/functions");
 const functions_web_1 = require("../base/tracks/functions.web");
 const actionTypes_1 = require("./actionTypes");

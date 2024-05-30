@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.shouldRequestHIDDevice = exports.removeHidEventListeners = exports.handleUpdateHidDevice = exports.getDeviceInfo = exports.isDeviceHidSupported = exports.getWebHidState = exports.getWebHidInstance = exports.attachHidEventListeners = void 0;
 const constants_1 = require("../base/media/constants");
 const actions_any_1 = require("../video-menu/actions.any");
 const actions_1 = require("./actions");
 const types_1 = require("./types");
-const webhid_manager_1 = require("./webhid-manager");
+const webhid_manager_1 = __importDefault(require("./webhid-manager"));
 /**
  * Attach web hid event listeners.
  *

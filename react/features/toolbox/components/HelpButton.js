@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
@@ -7,7 +10,7 @@ const constants_1 = require("../../base/flags/constants");
 const functions_2 = require("../../base/flags/functions");
 const functions_3 = require("../../base/i18n/functions");
 const svg_1 = require("../../base/icons/svg");
-const AbstractButton_1 = require("../../base/toolbox/components/AbstractButton");
+const AbstractButton_1 = __importDefault(require("../../base/toolbox/components/AbstractButton"));
 const openURLInBrowser_1 = require("../../base/util/openURLInBrowser");
 /**
  * Implements an {@link AbstractButton} to open the user documentation in a new window.

@@ -1,16 +1,19 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const excalidraw_1 = require("@jitsi/excalidraw");
-const react_1 = require("react");
-const BaseApp_1 = require("../../../base/app/components/BaseApp");
-const GlobalStyles_web_1 = require("../../../base/ui/components/GlobalStyles.web");
-const JitsiThemeProvider_web_1 = require("../../../base/ui/components/JitsiThemeProvider.web");
+const react_1 = __importDefault(require("react"));
+const BaseApp_1 = __importDefault(require("../../../base/app/components/BaseApp"));
+const GlobalStyles_web_1 = __importDefault(require("../../../base/ui/components/GlobalStyles.web"));
+const JitsiThemeProvider_web_1 = __importDefault(require("../../../base/ui/components/JitsiThemeProvider.web"));
 const httpUtils_1 = require("../../../base/util/httpUtils");
 const parseURLParams_1 = require("../../../base/util/parseURLParams");
 const uri_1 = require("../../../base/util/uri");
-const logger_1 = require("../../logger");
-const NoWhiteboardError_1 = require("./NoWhiteboardError");
-const WhiteboardWrapper_1 = require("./WhiteboardWrapper");
+const logger_1 = __importDefault(require("../../logger"));
+const NoWhiteboardError_1 = __importDefault(require("./NoWhiteboardError"));
+const WhiteboardWrapper_1 = __importDefault(require("./WhiteboardWrapper"));
 /**
  * Wrapper application for the whiteboard.
  *

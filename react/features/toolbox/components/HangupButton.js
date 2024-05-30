@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 const react_redux_1 = require("react-redux");
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
 const functions_1 = require("../../analytics/functions");
 const actions_1 = require("../../base/conference/actions");
 const functions_2 = require("../../base/i18n/functions");
-const AbstractHangupButton_1 = require("../../base/toolbox/components/AbstractHangupButton");
+const AbstractHangupButton_1 = __importDefault(require("../../base/toolbox/components/AbstractHangupButton"));
 /**
  * Component that renders a toolbar button for leaving the current conference.
  *

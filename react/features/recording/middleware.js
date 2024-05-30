@@ -1,18 +1,44 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const AnalyticsEvents_1 = require("../analytics/AnalyticsEvents");
 const functions_1 = require("../analytics/functions");
 const actionTypes_1 = require("../base/app/actionTypes");
 const actionTypes_2 = require("../base/conference/actionTypes");
 const functions_2 = require("../base/conference/functions");
-const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
+const lib_jitsi_meet_1 = __importStar(require("../base/lib-jitsi-meet"));
 const constants_1 = require("../base/media/constants");
 const actionTypes_3 = require("../base/participants/actionTypes");
 const actions_1 = require("../base/participants/actions");
 const constants_2 = require("../base/participants/constants");
 const functions_3 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
-const StateListenerRegistry_1 = require("../base/redux/StateListenerRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
+const StateListenerRegistry_1 = __importDefault(require("../base/redux/StateListenerRegistry"));
 const actions_2 = require("../base/sounds/actions");
 const actionTypes_4 = require("../base/tracks/actionTypes");
 const actions_3 = require("../notifications/actions");
@@ -20,10 +46,10 @@ const constants_3 = require("../notifications/constants");
 const functions_4 = require("../transcribing/functions");
 const actionTypes_5 = require("./actionTypes");
 const actions_4 = require("./actions");
-const LocalRecordingManager_1 = require("./components/Recording/LocalRecordingManager");
+const LocalRecordingManager_1 = __importDefault(require("./components/Recording/LocalRecordingManager"));
 const constants_4 = require("./constants");
 const functions_5 = require("./functions");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 /**
  * StateListenerRegistry provides a reliable way to detect the leaving of a
  * conference, where we need to clean up the recording sessions.

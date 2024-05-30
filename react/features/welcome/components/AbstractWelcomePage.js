@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mapStateToProps = exports.AbstractWelcomePage = void 0;
 // @ts-expect-error
@@ -7,7 +10,7 @@ const react_1 = require("react");
 const AnalyticsEvents_1 = require("../../analytics/AnalyticsEvents");
 const functions_1 = require("../../analytics/functions");
 const actions_1 = require("../../app/actions");
-const isInsecureRoomName_1 = require("../../base/util/isInsecureRoomName");
+const isInsecureRoomName_1 = __importDefault(require("../../base/util/isInsecureRoomName"));
 const functions_2 = require("../../calendar-sync/functions");
 const functions_3 = require("../../prejoin/functions");
 const functions_4 = require("../../recent-list/functions");

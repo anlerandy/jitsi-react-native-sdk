@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-expect-error
 const transport_1 = require("../../../modules/transport");
@@ -8,7 +11,7 @@ const actionTypes_3 = require("../base/devices/actionTypes");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const actionTypes_4 = require("../base/participants/actionTypes");
 const functions_1 = require("../base/participants/functions");
-const MiddlewareRegistry_1 = require("../base/redux/MiddlewareRegistry");
+const MiddlewareRegistry_1 = __importDefault(require("../base/redux/MiddlewareRegistry"));
 const helpers_1 = require("../base/util/helpers");
 const functions_2 = require("../display-name/functions");
 const actionTypes_5 = require("../feedback/actionTypes");

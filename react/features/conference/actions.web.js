@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.init = exports.setupInitialDevices = exports.dismissCalendarNotification = exports.openLeaveReasonDialog = void 0;
 const actions_web_1 = require("../base/devices/actions.web");
 const actions_1 = require("../base/dialog/actions");
 const uri_1 = require("../base/util/uri");
 const actionTypes_1 = require("./actionTypes");
-const LeaveReasonDialog_web_1 = require("./components/web/LeaveReasonDialog.web");
-const logger_1 = require("./logger");
+const LeaveReasonDialog_web_1 = __importDefault(require("./components/web/LeaveReasonDialog.web"));
+const logger_1 = __importDefault(require("./logger"));
 /**
  * Opens {@code LeaveReasonDialog}.
  *

@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const logger_1 = require("../logger");
-const AbstractHandler_1 = require("./AbstractHandler");
+const logger_1 = __importDefault(require("../logger"));
+const AbstractHandler_1 = __importDefault(require("./AbstractHandler"));
 const fixDeviceID_1 = require("./amplitude/fixDeviceID");
-const lib_1 = require("./amplitude/lib");
+const lib_1 = __importDefault(require("./amplitude/lib"));
 /**
  * Analytics handler for Amplitude.
  */

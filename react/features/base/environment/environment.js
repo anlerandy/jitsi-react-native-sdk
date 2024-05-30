@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isSupportedMobileBrowser = exports.isSupportedBrowser = exports.isSuboptimalBrowser = exports.isWindows = exports.isMacOS = exports.isBrowsersOptimal = void 0;
-const lib_jitsi_meet_1 = require("../lib-jitsi-meet");
-const Platform_1 = require("../react/Platform");
+const lib_jitsi_meet_1 = __importDefault(require("../lib-jitsi-meet"));
+const Platform_1 = __importDefault(require("../react/Platform"));
 const utils_1 = require("./utils");
 const { browser } = lib_jitsi_meet_1.default.util;
 const DEFAULT_OPTIMAL_BROWSERS = [

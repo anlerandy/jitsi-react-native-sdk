@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toState = exports.set = exports.equals = exports.assign = void 0;
-const lodash_1 = require("lodash");
+const lodash_1 = __importDefault(require("lodash"));
 /**
  * Sets specific properties of a specific state to specific values and prevents
  * unnecessary state changes.

@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const RTCStats_1 = require("../../rtcstats/RTCStats");
+const RTCStats_1 = __importDefault(require("../../rtcstats/RTCStats"));
 const functions_1 = require("../../rtcstats/functions");
 /**
  * Implements log storage interface from the @jitsi/logger lib.

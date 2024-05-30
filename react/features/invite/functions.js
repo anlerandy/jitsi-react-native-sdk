@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.inviteSipEndpoints = exports.isSharingEnabled = exports.executeDialOutStatusRequest = exports.executeDialOutRequest = exports.getDefaultDialInNumber = exports.getConferenceId = exports._decodeRoomURI = exports._getDefaultPhoneNumber = exports.hasMultipleNumbers = exports.shouldDisplayDialIn = exports.getDialInfoPageURLForURIString = exports.getDialInfoPageURL = exports.getShareInfoText = exports.searchDirectory = exports.isSipInviteEnabled = exports.isDialOutEnabled = exports.isAddPeopleEnabled = exports.invitePeopleAndChatRooms = exports.getInviteTypeCounts = exports.getInviteText = exports.getInviteTextiOS = exports.getInviteResultsForQuery = exports.getDigitsOnly = exports.checkOutboundDestination = exports.checkDialNumber = exports.sharingFeatures = void 0;
 const functions_1 = require("../base/conference/functions");
 const functions_2 = require("../base/connection/functions");
 const utils_1 = require("../base/environment/utils");
-const i18next_1 = require("../base/i18n/i18next");
+const i18next_1 = __importDefault(require("../base/i18n/i18next"));
 const functions_3 = require("../base/jwt/functions");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
 const functions_4 = require("../base/participants/functions");
@@ -16,7 +19,7 @@ const functions_6 = require("../jaas/functions");
 const functions_7 = require("../recording/functions");
 const _utils_1 = require("./_utils");
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 exports.sharingFeatures = {
     email: 'email',
     url: 'url',

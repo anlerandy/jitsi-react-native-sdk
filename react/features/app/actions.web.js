@@ -13,6 +13,9 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.reloadNow = exports.maybeRedirectToWelcomePage = exports.appNavigate = void 0;
 // @ts-expect-error
@@ -29,7 +32,7 @@ const constants_1 = require("../notifications/constants");
 const functions_2 = require("../welcome/functions");
 const actions_any_1 = require("./actions.any");
 const functions_web_2 = require("./functions.web");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 __exportStar(require("./actions.any"), exports);
 /**
  * Triggers an in-app navigation to a specific route. Allows navigation to be

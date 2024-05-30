@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DEFAULT_STATE = void 0;
-const PersistenceRegistry_1 = require("../redux/PersistenceRegistry");
-const ReducerRegistry_1 = require("../redux/ReducerRegistry");
+const PersistenceRegistry_1 = __importDefault(require("../redux/PersistenceRegistry"));
+const ReducerRegistry_1 = __importDefault(require("../redux/ReducerRegistry"));
 const actionTypes_1 = require("./actionTypes");
 /**
  * The default list of domains known to the feature base/known-domains.

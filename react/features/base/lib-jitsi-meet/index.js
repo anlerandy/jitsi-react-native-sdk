@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RTCStatsEvents = exports.JitsiTrackEvents = exports.JitsiTrackErrors = exports.JitsiSIPVideoGWStatus = exports.JitsiRecordingConstants = exports.JitsiTrackStreamingStatus = exports.JitsiMediaDevicesEvents = exports.JitsiE2ePingEvents = exports.JitsiDetectionEvents = exports.JitsiConnectionQualityEvents = exports.JitsiConnectionEvents = exports.JitsiConnectionErrors = exports.JitsiConferenceEvents = exports.JitsiConferenceErrors = exports.browser = exports.analytics = exports.default = void 0;
 // Re-export JitsiMeetJS from the library lib-jitsi-meet to (the other features
 // of) the project jitsi-meet.
-const _1 = require("./_");
+const _1 = __importDefault(require("./_"));
 exports.default = _1.default;
 // XXX Re-export the properties exported by JitsiMeetJS in order to prevent
 // undefined imported JitsiMeetJS. It may be caused by import cycles but I have

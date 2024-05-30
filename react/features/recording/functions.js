@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.registerRecordingAudioFiles = exports.unregisterRecordingAudioFiles = exports.isRemoteParticipantRecordingLocally = exports.sendMeetingHighlight = exports.getResourceId = exports.getRecordButtonProps = exports.isRecordingSharingEnabled = exports.shouldAutoTranscribeOnRecord = exports.canStopRecording = exports.isRecordingRunning = exports.isCloudRecordingRunning = exports.supportsLocalRecording = exports.getSessionStatusToShow = exports.isHighlightMeetingMomentDisabled = exports.isSavingRecordingOnDropbox = exports.getRecordingLink = exports.getSessionById = exports.getRecordingDurationEstimation = exports.getActiveSession = void 0;
-const i18next_1 = require("i18next");
+const i18next_1 = __importDefault(require("i18next"));
 const utils_1 = require("../base/environment/utils");
 const functions_1 = require("../base/jwt/functions");
 const lib_jitsi_meet_1 = require("../base/lib-jitsi-meet");
@@ -12,9 +15,9 @@ const functions_4 = require("../breakout-rooms/functions");
 const functions_5 = require("../dropbox/functions");
 const functions_any_1 = require("../dynamic-branding/functions.any");
 const functions_6 = require("../transcribing/functions");
-const LocalRecordingManager_1 = require("./components/Recording/LocalRecordingManager");
+const LocalRecordingManager_1 = __importDefault(require("./components/Recording/LocalRecordingManager"));
 const constants_1 = require("./constants");
-const logger_1 = require("./logger");
+const logger_1 = __importDefault(require("./logger"));
 const sounds_1 = require("./sounds");
 /**
  * Searches in the passed in redux state for an active recording session of the
